@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@react-hook/mouse-position": "^4.1.3",
+    "framer-motion": "^6.2.8",
     "locomotive-scroll": "^4.1.4",
     "magic-hover": "^1.0.5",
     "next": "12.1.0",

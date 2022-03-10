@@ -102,15 +102,15 @@ export const ProjectViewer = () => {
           className="scrollbar-thin scrollbar-track-gigapink scrollbar-thumb-gigablue flex flex-row gap-10 mx-auto overflow-x-scroll overflow-y-hidden relative snap-x snap-mandatory w-[1010px] pb-2 pt-10 px-10"
           id="projects"
         >
-          <div className="transform transition duration-500 hover:scale-110 origin-bottom-left bg-pgb bg-cover min-h-[270px] min-w-[216px] border-2 border-white snap-start snap-always"></div>
-          <div className="transform transition duration-500 hover:scale-110 origin-bottom-left bg-grandvenue bg-cover min-h-[270px] min-w-[216px] border-2 border-white snap-start snap-always"></div>
-          <div className="transform transition duration-500 hover:scale-110 origin-bottom-left bg-mycabinbed bg-cover min-h-[270px] min-w-[216px] border-2 border-white snap-start snap-always"></div>
-          <div className="transform transition duration-500 hover:scale-110 origin-bottom-left bg-swapmyenergy bg-cover min-h-[270px] min-w-[216px] border-2 border-white snap-start snap-always"></div>
-          <div className="transform transition duration-500 hover:scale-110 origin-bottom-left bg-white min-h-[270px] min-w-[216px] border-2 border-white snap-start snap-always"></div>
-          <div className="transform transition duration-500 hover:scale-110 origin-bottom-left bg-white min-h-[270px] min-w-[216px] border-2 border-white snap-start snap-always"></div>
-          <div className="transform transition duration-500 hover:scale-110 origin-bottom-left bg-white min-h-[270px] min-w-[216px] border-2 border-white snap-start snap-always"></div>
-          <div className="transform transition duration-500 hover:scale-110 origin-bottom-left bg-white min-h-[270px] min-w-[216px] border-2 border-white snap-start snap-always"></div>
-          <div className="transform transition duration-500 hover:scale-110 origin-bottom-left bg-white min-h-[270px] min-w-[216px] border-2 border-white snap-start snap-always"></div>
+          <div className="transform transition duration-200 hover:scale-110 origin-bottom-left bg-pgb bg-cover min-h-[270px] min-w-[216px] border-2 border-white snap-start snap-always"></div>
+          <div className="transform transition duration-200 hover:scale-110 origin-bottom-left bg-grandvenue bg-cover min-h-[270px] min-w-[216px] border-2 border-white snap-start snap-always"></div>
+          <div className="transform transition duration-200 hover:scale-110 origin-bottom-left bg-mycabinbed bg-cover min-h-[270px] min-w-[216px] border-2 border-white snap-start snap-always"></div>
+          <div className="transform transition duration-200 hover:scale-110 origin-bottom-left bg-swapmyenergy bg-cover min-h-[270px] min-w-[216px] border-2 border-white snap-start snap-always"></div>
+          <div className="transform transition duration-200 hover:scale-110 origin-bottom-left bg-white min-h-[270px] min-w-[216px] border-2 border-white snap-start snap-always"></div>
+          <div className="transform transition duration-200 hover:scale-110 origin-bottom-left bg-white min-h-[270px] min-w-[216px] border-2 border-white snap-start snap-always"></div>
+          <div className="transform transition duration-200 hover:scale-110 origin-bottom-left bg-white min-h-[270px] min-w-[216px] border-2 border-white snap-start snap-always"></div>
+          <div className="transform transition duration-200 hover:scale-110 origin-bottom-left bg-white min-h-[270px] min-w-[216px] border-2 border-white snap-start snap-always"></div>
+          <div className="transform transition duration-200 hover:scale-110 origin-bottom-left bg-white min-h-[270px] min-w-[216px] border-2 border-white snap-start snap-always"></div>
         </div>
         <div className="flex flex-col justify-center">
           <div className="flex flex-col justify-center">
