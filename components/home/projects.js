@@ -106,7 +106,7 @@ export const ProjectViewer = () => {
           <div className="transform transition duration-200 hover:scale-110 origin-bottom-left bg-grandvenue bg-cover min-h-[270px] min-w-[216px] border-2 border-white snap-start snap-always"></div>
           <div className="transform transition duration-200 hover:scale-110 origin-bottom-left bg-mycabinbed bg-cover min-h-[270px] min-w-[216px] border-2 border-white snap-start snap-always"></div>
           <div className="transform transition duration-200 hover:scale-110 origin-bottom-left bg-swapmyenergy bg-cover min-h-[270px] min-w-[216px] border-2 border-white snap-start snap-always"></div>
-          <div className="transform transition duration-200 hover:scale-110 origin-bottom-left bg-white min-h-[270px] min-w-[216px] border-2 border-white snap-start snap-always"></div>
+          <div className="transform transition duration-200 hover:scale-110 origin-bottom-left bg-unitecities bg-cover min-h-[270px] min-w-[216px] border-2 border-white snap-start snap-always"></div>
           <div className="transform transition duration-200 hover:scale-110 origin-bottom-left bg-white min-h-[270px] min-w-[216px] border-2 border-white snap-start snap-always"></div>
           <div className="transform transition duration-200 hover:scale-110 origin-bottom-left bg-white min-h-[270px] min-w-[216px] border-2 border-white snap-start snap-always"></div>
           <div className="transform transition duration-200 hover:scale-110 origin-bottom-left bg-white min-h-[270px] min-w-[216px] border-2 border-white snap-start snap-always"></div>

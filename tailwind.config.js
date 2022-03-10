@@ -18,6 +18,7 @@ module.exports = {
         grandvenue: "url('/projects/grandvenue.jpg')",
         mycabinbed: "url('/projects/mycabinbed.jpg')",
         swapmyenergy: "url('/projects/swapmyenergy.jpg')",
+        unitecities: "url('/projects/unitecities.jpg')",
         gradient: "url('/gradient.svg')",
       },
       keyframes: {

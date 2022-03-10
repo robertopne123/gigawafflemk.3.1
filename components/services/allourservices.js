@@ -8,7 +8,12 @@ export const AllOurServices = () => {
         </h3>
         <div className="grid grid-cols-3 gap-4 p-2 relative">
           <div className="border-2 border-white flex flex-col gap-2">
-            <div className="w-full h-[250px] bg-black"></div>
+            <div className="w-full h-[250px] bg-white">
+              <img
+                src="/services/serviceImages/webdesign.png"
+                className="h-full mx-auto py-6"
+              ></img>
+            </div>
             <div className="p-4">
               <p className="text-4xl font-parkson text-white">Website Design</p>
               <p className="font-poppins text-white">
@@ -24,11 +29,14 @@ export const AllOurServices = () => {
             </div>
           </div>
           <div className="border-2 border-white flex flex-col gap-2">
-            <div className="w-full h-[250px] bg-black"></div>
+            <div className="w-full h-[250px] bg-white">
+              <img
+                src="/services/serviceImages/uidesign.png"
+                className="h-full mx-auto py-6"
+              ></img>
+            </div>
             <div className="p-4">
-              <p className="text-4xl font-parkson text-white">
-                Website Development
-              </p>
+              <p className="text-4xl font-parkson text-white">UI Design</p>
               <p className="font-poppins text-white">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
                 dolor ipsum, feugiat at mi eget, varius vulputate nisi. Cras
@@ -42,7 +50,12 @@ export const AllOurServices = () => {
             </div>
           </div>
           <div className="border-2 border-white">
-            <div className="w-full h-[250px] bg-black"></div>
+            <div className="w-full h-[250px] bg-white">
+              <img
+                src="/services/serviceImages/ecommercedesign.png"
+                className="h-full mx-auto py-6"
+              ></img>
+            </div>
             <div className="p-4">
               <p className="text-4xl font-parkson text-white">
                 E-Commerce Design
@@ -237,24 +250,114 @@ export const AllOurServices = () => {
               content design
             </h3>
             <div className="grid grid-cols-3 gap-4">
-              <p className="text-3xl font-parkson text-gigapink">
-                Social Media Management
-              </p>
-              <p className="text-3xl font-parkson text-gigapink">
-                Social Media Content Strategy
-              </p>
-              <p className="text-3xl font-parkson text-gigapink">
-                Email Marketing
-              </p>
-              <p className="text-3xl font-parkson text-gigapink">
-                Social Media Advertising
-              </p>
-              <p className="text-3xl font-parkson text-gigapink">
-                Content Creation
-              </p>
-              <p className="text-3xl font-parkson text-gigapink">
-                Search Engine Optimisation
-              </p>
+              <div className="border-2 border-gigapink">
+                <div className="w-full h-[250px] bg-black"></div>
+                <div className="p-4">
+                  <p className="text-3xl font-parkson text-gigapink">
+                    Social Media Management
+                  </p>
+                  <p className="font-poppins text-gigapink">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+                    dolor ipsum, feugiat at mi eget, varius vulputate nisi. Cras
+                    commodo nulla et dui tincidunt, ut mattis augue aliquam.
+                    Phasellus lorem lacus, laoreet sed lacinia non, eleifend eu
+                    ligula. Sed sodales eros non purus placerat, nec imperdiet
+                    tellus commodo. In hac habitasse platea dictumst. Aliquam
+                    aliquam sit amet ante eget iaculis. Phasellus suscipit
+                    pulvinar justo luctus accumsan. Sed consequat sodales ante.
+                  </p>
+                </div>
+              </div>
+              <div className="border-2 border-gigapink">
+                <div className="w-full h-[250px] bg-black"></div>
+                <div className="p-4">
+                  <p className="text-3xl font-parkson text-gigapink">
+                    Social Media Content Strategy
+                  </p>
+                  <p className="font-poppins text-gigapink">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+                    dolor ipsum, feugiat at mi eget, varius vulputate nisi. Cras
+                    commodo nulla et dui tincidunt, ut mattis augue aliquam.
+                    Phasellus lorem lacus, laoreet sed lacinia non, eleifend eu
+                    ligula. Sed sodales eros non purus placerat, nec imperdiet
+                    tellus commodo. In hac habitasse platea dictumst. Aliquam
+                    aliquam sit amet ante eget iaculis. Phasellus suscipit
+                    pulvinar justo luctus accumsan. Sed consequat sodales ante.
+                  </p>
+                </div>
+              </div>
+              <div className="border-2 border-gigapink">
+                <div className="w-full h-[250px] bg-black"></div>
+                <div className="p-4">
+                  <p className="text-3xl font-parkson text-gigapink">
+                    Email Marketing
+                  </p>
+                  <p className="font-poppins text-gigapink">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+                    dolor ipsum, feugiat at mi eget, varius vulputate nisi. Cras
+                    commodo nulla et dui tincidunt, ut mattis augue aliquam.
+                    Phasellus lorem lacus, laoreet sed lacinia non, eleifend eu
+                    ligula. Sed sodales eros non purus placerat, nec imperdiet
+                    tellus commodo. In hac habitasse platea dictumst. Aliquam
+                    aliquam sit amet ante eget iaculis. Phasellus suscipit
+                    pulvinar justo luctus accumsan. Sed consequat sodales ante.
+                  </p>
+                </div>
+              </div>
+              <div className="border-2 border-gigapink">
+                <div className="w-full h-[250px] bg-black"></div>
+                <div className="p-4">
+                  <p className="text-3xl font-parkson text-gigapink">
+                    Social Media Advertising
+                  </p>
+                  <p className="font-poppins text-gigapink">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+                    dolor ipsum, feugiat at mi eget, varius vulputate nisi. Cras
+                    commodo nulla et dui tincidunt, ut mattis augue aliquam.
+                    Phasellus lorem lacus, laoreet sed lacinia non, eleifend eu
+                    ligula. Sed sodales eros non purus placerat, nec imperdiet
+                    tellus commodo. In hac habitasse platea dictumst. Aliquam
+                    aliquam sit amet ante eget iaculis. Phasellus suscipit
+                    pulvinar justo luctus accumsan. Sed consequat sodales ante.
+                  </p>
+                </div>
+              </div>
+              <div className="border-2 border-gigapink">
+                <div className="w-full h-[250px] bg-black"></div>
+                <div className="p-4">
+                  <p className="text-3xl font-parkson text-gigapink">
+                    Content Creation
+                  </p>
+                  <p className="font-poppins text-gigapink">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+                    dolor ipsum, feugiat at mi eget, varius vulputate nisi. Cras
+                    commodo nulla et dui tincidunt, ut mattis augue aliquam.
+                    Phasellus lorem lacus, laoreet sed lacinia non, eleifend eu
+                    ligula. Sed sodales eros non purus placerat, nec imperdiet
+                    tellus commodo. In hac habitasse platea dictumst. Aliquam
+                    aliquam sit amet ante eget iaculis. Phasellus suscipit
+                    pulvinar justo luctus accumsan. Sed consequat sodales ante.
+                  </p>
+                </div>
+              </div>
+              <div className="border-2 border-gigapink">
+                <div className="w-full h-[250px] bg-black"></div>
+                <div className="p-4">
+                  <p className="text-3xl font-parkson text-gigapink">
+                    Search Engine Optimisation
+                  </p>
+                  <p className="font-poppins text-gigapink">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+                    dolor ipsum, feugiat at mi eget, varius vulputate nisi. Cras
+                    commodo nulla et dui tincidunt, ut mattis augue aliquam.
+                    Phasellus lorem lacus, laoreet sed lacinia non, eleifend eu
+                    ligula. Sed sodales eros non purus placerat, nec imperdiet
+                    tellus commodo. In hac habitasse platea dictumst. Aliquam
+                    aliquam sit amet ante eget iaculis. Phasellus suscipit
+                    pulvinar justo luctus accumsan. Sed consequat sodales ante.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>

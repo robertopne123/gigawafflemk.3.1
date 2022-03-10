@@ -11,8 +11,10 @@ import { HomeStats } from "../components/home/stats";
 import { ProjectViewer } from "../components/home/projects";
 import { Contact } from "../components/home/contact";
 import { Footer } from "../components/footer";
+import { TeamHero } from "../components/ourteam/teamhero";
+import { Team } from "../components/ourteam/team";
 
-export default function Services() {
+export default function OurTeam() {
   return (
     <div className={styles.container}>
       <Head>
@@ -22,9 +24,8 @@ export default function Services() {
       </Head>
 
       <Navbar colour="white" />
-      <HeroServices />
-      <AllOurServices />
-      <Footer />
+      <TeamHero />
+      <Team />
     </div>
   );
 }

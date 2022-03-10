@@ -45,6 +45,12 @@ export const HeroProjects = () => {
       link: "https://playgroundbullysuk.com",
       bg: "url('/swapmyenergybg.jpg')",
     },
+    {
+      title: "Unite Cities",
+      desc: "For PlaygroundBullys, we built a website that allowed for their business to be transitioned away from only being run on social media. Their new site included a portfolio of their dogs, information about their services and the ability to book timeslots with them.",
+      link: "https://playgroundbullysuk.com",
+      bg: "url('/unitecitiesbg.jpg')",
+    },
   ];
 
   function checkInViewport() {
@@ -111,6 +117,10 @@ export const HeroProjects = () => {
             />
             <img
               src="/projects/swapmyenergy.jpg"
+              className="project w-[40%] self-end border-[5px] border-white"
+            />
+            <img
+              src="/projects/unitecities.jpg"
               className="project w-[40%] self-end border-[5px] border-white"
             />
           </div>
