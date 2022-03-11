@@ -26,6 +26,7 @@ export default function OurTeam() {
       <Navbar colour="white" />
       <TeamHero />
       <Team />
+      <Footer />
     </div>
   );
 }

@@ -1,20 +1,30 @@
 export const Team = () => {
   return (
     <div className="w-full py-20 px-4">
-      <div className="max-w-[1250px] mx-auto grid grid-cols-5 pb-10 gap-10">
+      <div className="max-w-[1250px] mx-auto grid grid-cols-4 justify-items-center pb-10 gap-10">
         <div className="flex flex-col gap-2">
-          <div className="w-[150px] h-[150px] bg-black"></div>
+          <div className="w-[150px] h-[150px] bg-gigapink rounded-full overflow-clip">
+            <img
+              src="/staff/1.png"
+              className="h-full w-full object-contain scale-110 -translate-x-1"
+            ></img>
+          </div>
           <div className="flex flex-col">
             <p className="font-parkson text-black text-3xl leading-[25px]">
               Robert Graham
             </p>
             <p className="font-parkson text-gigapink text-xl">
-              Marketing & Development Manager
+              Development Manager
             </p>
           </div>
         </div>
         <div className="flex flex-col gap-2">
-          <div className="w-[150px] h-[150px] bg-black"></div>
+          <div className="w-[150px] h-[150px] bg-gigapink rounded-full overflow-clip">
+            <img
+              src="/staff/2.png"
+              className="h-full w-full object-contain scale-125 translate-y-2 translate-x-1"
+            ></img>
+          </div>
           <div className="flex flex-col">
             <p className="font-parkson text-black text-3xl leading-[25px]">
               Nick Bilsborrow
@@ -23,7 +33,12 @@ export const Team = () => {
           </div>
         </div>
         <div className="flex flex-col gap-2">
-          <div className="w-[150px] h-[150px] bg-black"></div>
+          <div className="w-[150px] h-[150px] bg-gigapink rounded-full overflow-clip">
+            <img
+              src="/staff/7.png"
+              className="h-full w-full object-contain translate-x-2"
+            ></img>
+          </div>
           <div className="flex flex-col">
             <p className="font-parkson text-black text-3xl leading-[25px]">
               Richard Van Parys
@@ -32,7 +47,12 @@ export const Team = () => {
           </div>
         </div>
         <div className="flex flex-col gap-2">
-          <div className="w-[150px] h-[150px] bg-black"></div>
+          <div className="w-[150px] h-[150px] bg-gigapink rounded-full overflow-clip">
+            <img
+              src="/staff/7.png"
+              className="h-full w-full object-contain translate-x-2"
+            ></img>
+          </div>
           <div className="flex flex-col">
             <p className="font-parkson text-black text-3xl leading-[25px]">
               Matthew Campbell
@@ -41,7 +61,12 @@ export const Team = () => {
           </div>
         </div>
         <div className="flex flex-col gap-2">
-          <div className="w-[150px] h-[150px] bg-black"></div>
+          <div className="w-[150px] h-[150px] bg-gigapink rounded-full overflow-clip">
+            <img
+              src="/staff/8.png"
+              className="h-full w-full object-contain scale-125 translate-y-3"
+            ></img>
+          </div>
           <div className="flex flex-col">
             <p className="font-parkson text-black text-3xl leading-[25px]">
               Benjamin Williams
@@ -50,7 +75,12 @@ export const Team = () => {
           </div>
         </div>
         <div className="flex flex-col gap-2">
-          <div className="w-[150px] h-[150px] bg-black"></div>
+          <div className="w-[150px] h-[150px] bg-gigapink rounded-full overflow-clip">
+            <img
+              src="/staff/9.png"
+              className="h-full w-full object-contain scale-125 -translate-x-2"
+            ></img>
+          </div>
           <div className="flex flex-col">
             <p className="font-parkson text-black text-3xl leading-[25px]">
               Uzair Fadia
@@ -61,7 +91,12 @@ export const Team = () => {
           </div>
         </div>
         <div className="flex flex-col gap-2">
-          <div className="w-[150px] h-[150px] bg-black"></div>
+          <div className="w-[150px] h-[150px] bg-gigablue rounded-full overflow-clip">
+            <img
+              src="/staff/4.png"
+              className="h-full w-full object-contain scale-[1.2] translate-x-0.5 -translate-y-0.5"
+            ></img>
+          </div>
           <div className="flex flex-col">
             <p className="font-parkson text-black text-3xl leading-[25px]">
               Josh Sargent
@@ -72,7 +107,12 @@ export const Team = () => {
           </div>
         </div>
         <div className="flex flex-col gap-2">
-          <div className="w-[150px] h-[150px] bg-black"></div>
+          <div className="w-[150px] h-[150px] bg-gigablue rounded-full overflow-clip">
+            <img
+              src="/staff/5.png"
+              className="h-full w-full object-contain scale-[1.15] translate-x-2 rotate-3"
+            ></img>
+          </div>
           <div className="flex flex-col">
             <p className="font-parkson text-black text-3xl leading-[25px]">
               Joe Scott
@@ -83,7 +123,12 @@ export const Team = () => {
           </div>
         </div>
         <div className="flex flex-col gap-2">
-          <div className="w-[150px] h-[150px] bg-black"></div>
+          <div className="w-[150px] h-[150px] bg-gigablue rounded-full overflow-clip">
+            <img
+              src="/staff/3.png"
+              className="h-full w-full object-contain scale-[1.15] translate-x-1"
+            ></img>
+          </div>
           <div className="flex flex-col">
             <p className="font-parkson text-black text-3xl leading-[25px]">
               Aidan Graham
@@ -94,7 +139,12 @@ export const Team = () => {
           </div>
         </div>
         <div className="flex flex-col gap-2">
-          <div className="w-[150px] h-[150px] bg-black"></div>
+          <div className="w-[150px] h-[150px] bg-white border-4 border-gigapink rounded-full overflow-clip">
+            <img
+              src="/staff/11.png"
+              className="h-full w-full object-contain scale-[1.3] translate-y-1 translate-x-1"
+            ></img>
+          </div>
           <div className="flex flex-col">
             <p className="font-parkson text-black text-3xl leading-[25px]">
               Chris Burbidge
@@ -105,7 +155,12 @@ export const Team = () => {
           </div>
         </div>
         <div className="flex flex-col gap-2">
-          <div className="w-[150px] h-[150px] bg-black"></div>
+          <div className="w-[150px] h-[150px] bg-white border-4 border-gigapink rounded-full overflow-clip">
+            <img
+              src="/staff/6.png"
+              className="h-full w-full object-contain scale-[1.2] translate-x-1 -translate-y-1"
+            ></img>
+          </div>
           <div className="flex flex-col">
             <p className="font-parkson text-black text-3xl leading-[25px]">
               Brett Gregson
@@ -115,17 +170,20 @@ export const Team = () => {
             </p>
           </div>
         </div>
-        <div className="max-w-[1250px] mx-auto grid grid-cols-5">
-          <div className="flex flex-col gap-2">
-            <div className="w-[150px] h-[150px] bg-black"></div>
-            <div className="flex flex-col">
-              <p className="font-parkson text-black text-3xl leading-[25px] w-[200px]">
-                Hamza Dadhiwala
-              </p>
-              <p className="font-parkson text-gigapink text-xl w-[200px]">
-                Trainee Designer
-              </p>
-            </div>
+        <div className="flex flex-col gap-2">
+          <div className="w-[150px] h-[150px] bg-white border-4 border-gigapink rounded-full overflow-clip">
+            <img
+              src="/staff/10.png"
+              className="h-full w-full object-contain scale-[1.2] translate-x-1 translate-y-0.5"
+            ></img>
+          </div>
+          <div className="flex flex-col">
+            <p className="font-parkson text-black text-3xl leading-[25px]">
+              Hamza Dadhiwala
+            </p>
+            <p className="font-parkson text-gigapink text-xl">
+              Trainee Designer
+            </p>
           </div>
         </div>
       </div>
