@@ -20,6 +20,7 @@ module.exports = {
         swapmyenergy: "url('/projects/swapmyenergy.jpg')",
         unitecities: "url('/projects/unitecities.jpg')",
         gradient: "url('/gradient.svg')",
+        studio: "url('/studio.jpg')",
       },
       keyframes: {
         grow: {
@@ -29,6 +30,9 @@ module.exports = {
       },
       animation: {
         "card-grow": "grow .2s linear ease-in-out",
+      },
+      screens: {
+        lg2: "1300px",
       },
     },
   },

@@ -35,7 +35,7 @@ export const FooterLink = (props) => {
 export const Footer = () => {
   return (
     <div className="w-full px-4 py-20 bg-black">
-      <div className="max-w-[1250px] mx-auto grid grid-cols-4">
+      <div className="max-w-[1250px] mx-auto grid md:grid-cols-4">
         <div className="flex flex-col">
           <div className="flex flex-row gap-3">
             <img src="/logo.svg" className="h-[50px] w-[50px] invert"></img>

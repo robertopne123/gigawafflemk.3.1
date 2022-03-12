@@ -7,7 +7,7 @@ export const HomeIntro = () => {
         <div className="bg-white h-[30px] w-[30px]"></div>
         <div className="bg-black h-[30px] w-[30px]"></div>
       </div>
-      <div className="max-w-[1250px] mx-auto grid grid-cols-2 gap-10">
+      <div className="max-w-[1250px] mx-auto grid md:grid-cols-2 grid-cols-1 gap-10">
         <div className="flex flex-col gap-4">
           <h3 className="text-white font-parkson text-5xl">Gigawaffle</h3>
           <p className="text-white font-poppins font-semibold">Why us?</p>

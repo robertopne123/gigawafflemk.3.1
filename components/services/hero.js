@@ -1,7 +1,7 @@
 export const HeroServices = () => {
   return (
     <div className="w-full px-4">
-      <div className="max-w-[1250px] mx-auto h-[90vh] flex flex-col gap-8 justify-center">
+      <div className="max-w-[1250px] mx-auto h-[calc(100vh-82px)] flex flex-col gap-8 justify-center">
         <h1 className="font-parkson text-9xl">
           All the <br />
           SERVICES WITHOUT <br />

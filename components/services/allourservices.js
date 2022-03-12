@@ -1,6 +1,12 @@
 export const AllOurServices = () => {
   return (
-    <div className="w-full pt-20 bg-gigapink">
+    <div className="w-full pt-20 bg-gigapink relative">
+      <div className="absolute top-0 right-0 h-[30px] w-[120px] flex flex-row -translate-y-[30px]">
+        <div className="bg-gigapink h-[30px] w-[30px]"></div>
+        <div className="bg-gigablue h-[30px] w-[30px]"></div>
+        <div className="bg-white h-[30px] w-[30px]"></div>
+        <div className="bg-black h-[30px] w-[30px]"></div>
+      </div>
       <div className="max-w-[1250px] mx-auto flex flex-col gap-4 px-4 pb-20">
         <h3 className="text-6xl font-parkson text-white mb-1">
           Web Design & <br />
@@ -49,7 +55,7 @@ export const AllOurServices = () => {
               </p>
             </div>
           </div>
-          <div className="border-2 border-white">
+          <div className="border-2 border-white flex flex-col gap-2">
             <div className="w-full h-[250px] bg-white">
               <img
                 src="/services/serviceImages/ecommercedesign.png"
@@ -72,11 +78,11 @@ export const AllOurServices = () => {
               </p>
             </div>
           </div>
-          <div className="border-2 border-white">
+          <div className="border-2 border-white flex flex-col gap-2">
             <div className="w-full h-[250px] bg-white">
               <img
                 src="/services/serviceImages/blogdesign.png"
-                className="h-full mx-auto pt-8"
+                className="h-full mx-auto py-6"
               ></img>
             </div>
             <div className="p-4">
@@ -93,7 +99,7 @@ export const AllOurServices = () => {
               </p>
             </div>
           </div>
-          <div className="border-2 border-white">
+          <div className="border-2 border-white flex flex-col gap-2">
             <div className="w-full h-[250px] bg-white">
               <img
                 src="/services/serviceImages/landingdesign.png"
@@ -116,11 +122,16 @@ export const AllOurServices = () => {
               </p>
             </div>
           </div>
-          <div className="border-2 border-white">
-            <div className="w-full h-[250px] bg-black"></div>
+          <div className="border-2 border-white flex flex-col gap-2">
+            <div className="w-full h-[250px] bg-white">
+              <img
+                src="/services/serviceImages/socialmediashop.png"
+                className="h-full mx-auto py-6"
+              ></img>
+            </div>
             <div className="p-4">
               <p className="text-4xl font-parkson text-white">
-                Social Media Design
+                Social Media Shop
               </p>
               <p className="font-poppins text-white">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
@@ -143,7 +154,7 @@ export const AllOurServices = () => {
             brand design
           </h3>
           <div className="grid grid-cols-3 gap-4 p-2">
-            <div className="border-2 border-gigapink">
+            <div className="border-2 border-gigapink flex flex-col gap-2">
               <div className="w-full h-[250px] bg-white border-b-2 border-gigapink">
                 {" "}
                 <img
@@ -167,7 +178,7 @@ export const AllOurServices = () => {
                 </p>
               </div>
             </div>
-            <div className="border-2 border-gigapink">
+            <div className="border-2 border-gigapink flex flex-col gap-2">
               <div className="w-full h-[250px] bg-white border-b-2 border-gigapink">
                 <img
                   src="/services/serviceImages/visualrefocus.png"
@@ -190,7 +201,7 @@ export const AllOurServices = () => {
                 </p>
               </div>
             </div>
-            <div className="border-2 border-gigapink">
+            <div className="border-2 border-gigapink flex flex-col gap-2">
               <div className="w-full h-[250px] bg-white border-b-2 border-gigapink">
                 <img
                   src="/services/serviceImages/logodesign.png"
@@ -213,7 +224,7 @@ export const AllOurServices = () => {
                 </p>
               </div>
             </div>
-            <div className="border-2 border-gigapink">
+            <div className="border-2 border-gigapink flex flex-col gap-2">
               <div className="w-full h-[250px] bg-white border-b-2 border-gigapink">
                 <img
                   src="/services/serviceImages/brand.png"
@@ -236,7 +247,7 @@ export const AllOurServices = () => {
                 </p>
               </div>
             </div>
-            <div className="border-2 border-gigapink">
+            <div className="border-2 border-gigapink flex flex-col gap-2">
               <div className="w-full h-[250px] bg-white border-b-2 border-gigapink">
                 <img
                   src="/services/serviceImages/stationary.png"
@@ -259,7 +270,7 @@ export const AllOurServices = () => {
                 </p>
               </div>
             </div>
-            <div className="border-2 border-gigapink">
+            <div className="border-2 border-gigapink flex flex-col gap-2">
               <div className="w-full h-[250px] bg-white border-b-2 border-gigapink">
                 <img
                   src="/services/serviceImages/creativedesign.png"
@@ -291,7 +302,7 @@ export const AllOurServices = () => {
               content design
             </h3>
             <div className="grid grid-cols-3 gap-4">
-              <div className="border-2 border-black">
+              <div className="border-2 border-black flex flex-col gap-2">
                 <div className="w-full h-[250px] bg-white">
                   <img
                     src="/services/serviceImages/socialmgmt.png"
@@ -314,7 +325,7 @@ export const AllOurServices = () => {
                   </p>
                 </div>
               </div>
-              <div className="border-2 border-black">
+              <div className="border-2 border-black flex flex-col gap-2">
                 <div className="w-full h-[250px] bg-white">
                   <img
                     src="/services/serviceImages/contentstrategy.png"
@@ -337,7 +348,7 @@ export const AllOurServices = () => {
                   </p>
                 </div>
               </div>
-              <div className="border-2 border-black">
+              <div className="border-2 border-black flex flex-col gap-2">
                 <div className="w-full h-[250px] bg-white">
                   <img
                     src="/services/serviceImages/emailmarketing.png"
@@ -360,7 +371,7 @@ export const AllOurServices = () => {
                   </p>
                 </div>
               </div>
-              <div className="border-2 border-black">
+              <div className="border-2 border-black flex flex-col gap-2">
                 <div className="w-full h-[250px] bg-white">
                   <img
                     src="/services/serviceImages/advertising.png"
@@ -383,7 +394,7 @@ export const AllOurServices = () => {
                   </p>
                 </div>
               </div>
-              <div className="border-2 border-black">
+              <div className="border-2 border-black flex flex-col gap-2">
                 <div className="w-full h-[250px] bg-white">
                   <img
                     src="/services/serviceImages/contentcreation.png"
@@ -406,7 +417,7 @@ export const AllOurServices = () => {
                   </p>
                 </div>
               </div>
-              <div className="border-2 border-black">
+              <div className="border-2 border-black flex flex-col gap-2">
                 <div className="w-full h-[250px] bg-white">
                   <img
                     src="/services/serviceImages/seo.png"
@@ -440,7 +451,7 @@ export const AllOurServices = () => {
               </h3>
             </div>
             <div className="grid grid-cols-3 gap-4 p-2">
-              <div className="border-2 border-gigapink relative overflow-clip">
+              <div className="border-2 border-gigapink relative overflow-clip flex flex-col gap-2">
                 <p className="bg-gigablue absolute right-0 top-0 rotate-45 translate-y-3 translate-x-8 text-black font-parkson px-12">
                   new
                 </p>
@@ -466,7 +477,7 @@ export const AllOurServices = () => {
                   </p>
                 </div>
               </div>
-              <div className="border-2 border-gigapink relative overflow-clip">
+              <div className="border-2 border-gigapink relative overflow-clip flex flex-col gap-2">
                 <p className="bg-gigablue absolute right-0 top-0 rotate-45 translate-y-3 translate-x-8 text-black font-parkson px-12">
                   new
                 </p>
@@ -492,13 +503,13 @@ export const AllOurServices = () => {
                   </p>
                 </div>
               </div>
-              <div className="border-2 border-gigapink relative overflow-clip">
+              <div className="border-2 border-gigapink relative overflow-clip flex flex-col gap-2">
                 <p className="bg-gigablue absolute right-0 top-0 rotate-45 translate-y-3 translate-x-8 text-black font-parkson px-12">
                   new
                 </p>
                 <div className="w-full h-[250px] bg-white border-b-2 border-gigapink">
                   <img
-                    src="/services/serviceImages/podcast.png"
+                    src="/services/serviceImages/management.png"
                     className="h-full mx-auto py-6"
                   ></img>
                 </div>

@@ -69,7 +69,7 @@ export const Navbar = (props) => {
               viewBox="0 0 29 29"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
-              className="group"
+              className="group fill-white"
             >
               <rect
                 x="0.357422"
@@ -92,7 +92,7 @@ export const Navbar = (props) => {
             </svg>
           </div>
         </div>
-        <div className=" flex flex-col justify-center h-full max-w-[1250px] mx-auto -translate-y-10 ">
+        <div className=" flex flex-col justify-center h-full max-w-[1250px] mx-auto -translate-y-10 px-4">
           <div className="flex flex-row gap-3 -translate-y-20">
             <img src="/logo.svg" className="h-[50px] w-[50px] invert"></img>
             <p className="font-parkson text-5xl text-white">Gigawaffle</p>

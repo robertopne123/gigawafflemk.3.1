@@ -67,7 +67,8 @@ export const HeroProjects = () => {
         console.log(projects[i].title + ": " + i);
         title.innerHTML = projects[i].title;
         desc.innerHTML = projects[i].desc;
-        bgImg.style.background = projects[i].bg;
+        bgImg.style.backgroundColor = "#000000";
+        bgImg.style.backgroundImage = projects[i].bg;
         bgImg.style.backgroundSize = "cover";
       }
     }
@@ -78,7 +79,10 @@ export const HeroProjects = () => {
   }, []);
 
   return (
-    <div className="w-full bg-black/90 bg-cover relative" id="backgroundImage">
+    <div
+      className="w-full bg-black bg-cover relative placeholder:bg-black"
+      id="backgroundImage"
+    >
       <div className="w-full h-[calc(100vh-82px)] overflow-y-clip top-[0px] bg-black/80">
         <div className="max-w-[1250px] mx-auto relative flex flex-row justify-end">
           <div className="absolute left-0 top-0 flex flex-col gap-8 justify-end pb-[300px] h-screen">
