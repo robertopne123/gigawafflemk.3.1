@@ -13,28 +13,28 @@ export const AllOurServices = () => {
           Development
         </h3>
         <div className="grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-4 relative">
-          <div className="border-2 border-white flex flex-col gap-2">
-            <div className="w-full h-[250px] bg-white mb-5">
+          <div className="border-2 border-white flex flex-col gap-2 min-h-[550px]">
+            <div className="w-full h-[250px] bg-white">
               <img
                 src="/services/serviceImages/webdesign.png"
                 className="h-full mx-auto py-6"
               ></img>
             </div>
             <div className="p-4">
-              <p className="text-4xl font-parkson text-white">Website Design</p>
-              <p className="font-poppins text-white">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
-                dolor ipsum, feugiat at mi eget, varius vulputate nisi. Cras
-                commodo nulla et dui tincidunt, ut mattis augue aliquam.
-                Phasellus lorem lacus, laoreet sed lacinia non, eleifend eu
-                ligula. Sed sodales eros non purus placerat, nec imperdiet
-                tellus commodo. In hac habitasse platea dictumst. Aliquam
-                aliquam sit amet ante eget iaculis. Phasellus suscipit pulvinar
-                justo luctus accumsan. Sed consequat sodales ante.
+              <p className="text-4xl font-parkson text-white pb-2">
+                Website Design
+              </p>
+              <p className="font-poppins text-white min-h-[8ch]">
+                Make your business look the part with a new website. Our web
+                design team love using the latest technologies, following the
+                latest web design trends and building websites that are on-brand
+                and make people notice! We design with mobile devices in mind
+                from the ground up, so we can ensure that your customers have a
+                great experience whatever size device their on.
               </p>
             </div>
           </div>
-          <div className="border-2 border-white flex flex-col gap-2">
+          <div className="border-2 border-white flex flex-col gap-2 min-h-[550px]">
             <div className="w-full h-[250px] bg-white">
               <img
                 src="/services/serviceImages/uidesign.png"
@@ -42,20 +42,18 @@ export const AllOurServices = () => {
               ></img>
             </div>
             <div className="p-4">
-              <p className="text-4xl font-parkson text-white">UI Design</p>
+              <p className="text-4xl font-parkson text-white pb-2">UI Design</p>
               <p className="font-poppins text-white">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
-                dolor ipsum, feugiat at mi eget, varius vulputate nisi. Cras
-                commodo nulla et dui tincidunt, ut mattis augue aliquam.
-                Phasellus lorem lacus, laoreet sed lacinia non, eleifend eu
-                ligula. Sed sodales eros non purus placerat, nec imperdiet
-                tellus commodo. In hac habitasse platea dictumst. Aliquam
-                aliquam sit amet ante eget iaculis. Phasellus suscipit pulvinar
-                justo luctus accumsan. Sed consequat sodales ante.
+                The goal of user interface design services is to create
+                aesthetically appealing, brand-building digital interfaces that
+                attract and keep customers. Whatever your need, our design team
+                creates user interfaces that are specifically targeted to your
+                target audience, represent customer values, and successfully
+                support your company goals.
               </p>
             </div>
           </div>
-          <div className="border-2 border-white flex flex-col gap-2">
+          <div className="border-2 border-white flex flex-col gap-2 min-h-[550px]">
             <div className="w-full h-[250px] bg-white">
               <img
                 src="/services/serviceImages/ecommercedesign.png"
@@ -63,22 +61,20 @@ export const AllOurServices = () => {
               ></img>
             </div>
             <div className="p-4">
-              <p className="text-4xl font-parkson text-white">
+              <p className="text-4xl font-parkson text-white pb-2">
                 E-Commerce Design
               </p>
               <p className="font-poppins text-white">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
-                dolor ipsum, feugiat at mi eget, varius vulputate nisi. Cras
-                commodo nulla et dui tincidunt, ut mattis augue aliquam.
-                Phasellus lorem lacus, laoreet sed lacinia non, eleifend eu
-                ligula. Sed sodales eros non purus placerat, nec imperdiet
-                tellus commodo. In hac habitasse platea dictumst. Aliquam
-                aliquam sit amet ante eget iaculis. Phasellus suscipit pulvinar
-                justo luctus accumsan. Sed consequat sodales ante.
+                Stand out from the crowd with a new e-commerce website that not
+                only catches people&apos;s eyes, but makes them return regularly
+                through an mobile-first e-commerce setup. We build e-commerce
+                sites that go where the customers are, through social media
+                shopping services, such as Facebook Marketplace and Instagram
+                Shopping.
               </p>
             </div>
           </div>
-          <div className="border-2 border-white flex flex-col gap-2">
+          <div className="border-2 border-white flex flex-col gap-2 min-h-[550px]">
             <div className="w-full h-[250px] bg-white">
               <img
                 src="/services/serviceImages/blogdesign.png"
@@ -86,20 +82,20 @@ export const AllOurServices = () => {
               ></img>
             </div>
             <div className="p-4">
-              <p className="text-4xl font-parkson text-white">Blog Design</p>
+              <p className="text-4xl font-parkson text-white pb-2">
+                Blog Design
+              </p>
               <p className="font-poppins text-white">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
-                dolor ipsum, feugiat at mi eget, varius vulputate nisi. Cras
-                commodo nulla et dui tincidunt, ut mattis augue aliquam.
-                Phasellus lorem lacus, laoreet sed lacinia non, eleifend eu
-                ligula. Sed sodales eros non purus placerat, nec imperdiet
-                tellus commodo. In hac habitasse platea dictumst. Aliquam
-                aliquam sit amet ante eget iaculis. Phasellus suscipit pulvinar
-                justo luctus accumsan. Sed consequat sodales ante.
+                Communicate directly to your target audience with a beautifully
+                designed blog, that is easy for you to update and provide value
+                to your reader. It allow you to transmit messages that may
+                otherwise go unnoticed. Our designers take the effort to produce
+                blogs that are interesting to read and deliver a positive user
+                experience.
               </p>
             </div>
           </div>
-          <div className="border-2 border-white flex flex-col gap-2">
+          <div className="border-2 border-white flex flex-col gap-2 min-h-[550px]">
             <div className="w-full h-[250px] bg-white">
               <img
                 src="/services/serviceImages/landingdesign.png"
@@ -107,22 +103,20 @@ export const AllOurServices = () => {
               ></img>
             </div>
             <div className="p-4">
-              <p className="text-4xl font-parkson text-whiste">
+              <p className="text-4xl font-parkson text-white pb-2">
                 Landing Page Design
               </p>
               <p className="font-poppins text-white">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
-                dolor ipsum, feugiat at mi eget, varius vulputate nisi. Cras
-                commodo nulla et dui tincidunt, ut mattis augue aliquam.
-                Phasellus lorem lacus, laoreet sed lacinia non, eleifend eu
-                ligula. Sed sodales eros non purus placerat, nec imperdiet
-                tellus commodo. In hac habitasse platea dictumst. Aliquam
-                aliquam sit amet ante eget iaculis. Phasellus suscipit pulvinar
-                justo luctus accumsan. Sed consequat sodales ante.
+                With a personalised landing page design, you can increase sales,
+                improve lead quality, and increase income. Landing pages are
+                extremely important in marketing and advertising, so make sure
+                you have one that stands out. Our design team will design
+                landing pages that are on-brand and capture the attention of
+                potential customers.
               </p>
             </div>
           </div>
-          <div className="border-2 border-white flex flex-col gap-2">
+          <div className="border-2 border-white flex flex-col gap-2 min-h-[550px]">
             <div className="w-full h-[250px] bg-white">
               <img
                 src="/services/serviceImages/socialmediashop.png"
@@ -130,18 +124,16 @@ export const AllOurServices = () => {
               ></img>
             </div>
             <div className="p-4">
-              <p className="text-4xl font-parkson text-white">
+              <p className="text-4xl font-parkson text-white pb-2">
                 Social Media Shop
               </p>
               <p className="font-poppins text-white">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
-                dolor ipsum, feugiat at mi eget, varius vulputate nisi. Cras
-                commodo nulla et dui tincidunt, ut mattis augue aliquam.
-                Phasellus lorem lacus, laoreet sed lacinia non, eleifend eu
-                ligula. Sed sodales eros non purus placerat, nec imperdiet
-                tellus commodo. In hac habitasse platea dictumst. Aliquam
-                aliquam sit amet ante eget iaculis. Phasellus suscipit pulvinar
-                justo luctus accumsan. Sed consequat sodales ante.
+                The e-commerce landscape is changing! Social media shopping
+                services, such as Facebook Marketing and Instagram shopping are
+                becoming increasingly popular. Ensure your e-commerce website
+                keeps up with the latest online shopping trends through these
+                integrations, allowing you to more efficiently link your
+                products to where they can buy them.
               </p>
             </div>
           </div>
