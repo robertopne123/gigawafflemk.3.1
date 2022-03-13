@@ -76,7 +76,7 @@ export const ProjectViewer = () => {
       <h3 className="text-white font-parkson text-5xl max-w-[1010px] mx-auto">
         Projects
       </h3>
-      <div className="flex flex-row mt-10 max-w-[1250px] mx-auto gap-10">
+      <div className="flex flex-row mt-10 max-w-[1250px] mx-auto md:gap-10 gap-2">
         <div className="flex flex-col justify-center">
           <div className="rounded-full flex flex-col justify-center">
             <svg
@@ -85,7 +85,7 @@ export const ProjectViewer = () => {
               viewBox="0 0 15 20"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
-              className="group w-[30px] h-[30px] hover:scale-110"
+              className="group md:w-[30px] md:h-[30px] w-[20px] h-[20px] hover:scale-110 translate-y-7"
               onClick={() => {
                 ProjectViewerLeft();
               }}
@@ -120,7 +120,7 @@ export const ProjectViewer = () => {
               viewBox="0 0 15 20"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
-              className="group w-[30px] h-[30px] rotate-180 hover:scale-110"
+              className="group md:w-[30px] md:h-[30px] w-[20px] h-[20px] rotate-180 hover:scale-110 translate-y-7"
               onClick={() => {
                 ProjectViewerRight();
               }}

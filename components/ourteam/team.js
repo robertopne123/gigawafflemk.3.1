@@ -1,7 +1,7 @@
 export const Team = () => {
   return (
     <div className="w-full py-20 px-4">
-      <div className="max-w-[1250px] mx-auto grid grid-cols-4 justify-items-center pb-10 gap-10">
+      <div className="max-w-[1250px] mx-auto grid lg2:grid-cols-4 lg3:grid-cols-4 lg:grid-cols-4 md:grid-cols-3 xs:grid-cols-2 grid-cols-1 justify-items-center pb-10 gap-10">
         <div className="flex flex-col gap-2">
           <div className="w-[150px] h-[150px] bg-gigapink rounded-full overflow-clip">
             <img

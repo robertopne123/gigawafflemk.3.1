@@ -1,7 +1,7 @@
 export const Enquire = () => {
   return (
     <div className="w-full px-4 py-20">
-      <div className="max-w-[1250px] mx-auto grid grid-cols-2">
+      <div className="max-w-[1250px] mx-auto grid md:grid-cols-2 grid-cols-1">
         <div className="flex flex-col gap-4">
           <h3 className="font-parkson text-5xl">Enquire Now</h3>
           <input
@@ -49,7 +49,7 @@ export const Enquire = () => {
           ></input>
           <div className="flex flex-row" id="cameraDiv">
             <label
-              for="camera"
+              htmlFor="camera"
               className="py-2 px-4 font-parkson text-2xl text-black outline-none"
             >
               Are you bringing your own camera?
@@ -65,7 +65,7 @@ export const Enquire = () => {
           </div>
           <div className="flex flex-row" id="cameraDiv">
             <label
-              for="greenScreen"
+              htmlFor="greenScreen"
               className="py-2 px-4 font-parkson text-2xl text-black outline-none"
             >
               Will you need to use a green screen?

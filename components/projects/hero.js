@@ -84,48 +84,56 @@ export const HeroProjects = () => {
       id="backgroundImage"
     >
       <div className="w-full h-[calc(100vh-82px)] overflow-y-clip top-[0px] bg-black/80">
-        <div className="max-w-[1250px] mx-auto relative flex flex-row justify-end">
-          <div className="absolute left-0 top-0 flex flex-col gap-8 justify-end pb-[300px] h-screen">
-            <p className="font-poppins text-white w-1/2" id="desc">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dolor
-              ipsum, feugiat at mi eget, varius vulputate nisi. Cras commodo
-              nulla et dui tincidunt, ut mattis augue aliquam. Phasellus lorem
-              lacus, laoreet sed lacinia non, eleifend eu ligula. Sed sodales
-              eros non purus placerat, nec imperdiet tellus commodo. In hac
-              habitasse platea dictumst. Aliquam aliquam sit amet ante eget
-              iaculis. Phasellus suscipit pulvinar justo luctus accumsan. Sed
-              consequat sodales ante.
+        <div className="max-w-[1250px] mx-auto relative md:flex md:flex-row flex-col justify-end px-4">
+          <div className="md:absolute left-0 top-0 flex flex-col gap-8 md:justify-end md:pb-[300px] md:h-screen md:px-4">
+            <p
+              className="font-poppins text-white md:w-1/2 lg2:text-lg lg:text-md sm2:text-base sm3:text-sm text-xs md:min-h-[250px] min-h-[200px] max-h-[200px]"
+              id="desc"
+            >
+              Here you can find all of the projects we've worked on. You'll find
+              web design projects, branding projects and social media that we've
+              managed.
+              <br />
+              <br />
+              You can look through all of our projects by scrolling
+              <span className="md:inline hidden"> down</span>
+              <span className="md:hidden inline"> to the right</span>, and you
+              can see a more in-depth look at each project by clicking its cover
+              and looking through the pages.
             </p>
-            <h1 id="title" className="font-parkson text-9xl text-white">
+            <h1
+              id="title"
+              className="font-parkson lg2:text-9xl lg:text-8xl sm2:text-7xl sm3:text-5xl text-5xl text-white"
+            >
               OUR PROJECTS
             </h1>
             <div className="flex flex-row gap-4"></div>
           </div>
           <div
-            className="no-scrollbar bg-contain flex flex-col gap-[100px] mt-[150px] h-screen pb-[410px] overflow-y-scroll relative"
+            className="no-scrollbar bg-contain flex md:flex-col flex-row gap-[100px] md:mt-[100px] md:h-screen h-[400px] md:pb-[410px] pb-0 md:overflow-y-scroll overflow-x-scroll relative"
             onScroll={() => {
               checkInViewport();
             }}
           >
             <img
               src="/projects/PGB.jpg"
-              className="project w-[40%] self-end border-[5px] border-white"
+              className="project md:w-[40%] md:h-auto h-[100%] self-end border-[5px] border-white"
             />
             <img
               src="/projects/grandvenue.jpg"
-              className="project w-[40%] self-end border-[5px] border-white"
+              className="project md:w-[40%] md:h-auto h-[100%] self-end border-[5px] border-white"
             />
             <img
               src="/projects/mycabinbed.jpg"
-              className="project w-[40%] self-end border-[5px] border-white"
+              className="project md:w-[40%] md:h-auto h-[100%] self-end border-[5px] border-white"
             />
             <img
               src="/projects/swapmyenergy.jpg"
-              className="project w-[40%] self-end border-[5px] border-white"
+              className="project md:w-[40%] md:h-auto h-[100%] self-end border-[5px] border-white"
             />
             <img
               src="/projects/unitecities.jpg"
-              className="project w-[40%] self-end border-[5px] border-white"
+              className="project md:w-[40%] md:h-auto h-[100%] self-end border-[5px] border-white"
             />
           </div>
         </div>

@@ -33,3 +33,37 @@ a {
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
 }
+
+.c-rainbow {
+  --axis-x: 1px;
+  --axis-y: 0.3rem;
+  --delay: 10;
+}
+
+.c-rainbow__layer:nth-child(1) {
+  z-index: 20;
+  animation: rainbow 1.5s ease-in-out infinite;
+  animation-delay: 0s;
+}
+
+.c-rainbow__layer:nth-child(2) {
+  z-index: 10;
+  animation: rainbow 1.5s ease-in-out infinite;
+  animation-delay: 0.5s;
+}
+
+.c-rainbow__layer:nth-child(3) {
+  z-index: 0;
+  animation: rainbow 1.5s ease-in-out infinite;
+  animation-delay: 1s;
+}
+
+@keyframes rainbow {
+  0%,
+  100% {
+    transform: translatey(var(--axis-y));
+  }
+  50% {
+    transform: translatey(calc(var(--axis-y) * -1));
+  }
+}

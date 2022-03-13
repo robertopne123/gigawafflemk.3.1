@@ -1,7 +1,7 @@
 export const Info = () => {
   return (
     <div className="w-full px-4 py-20 bg-gigapink">
-      <div className="max-w-[1250px] mx-auto grid grid-cols-2">
+      <div className="max-w-[1250px] mx-auto grid md:grid-cols-2 grid-cols-1">
         <div className="flex flex-col gap-4">
           <h3 className="font-parkson text-white text-5xl">
             The Waffle Corner

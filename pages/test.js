@@ -12,7 +12,7 @@ import { Contact } from "../components/home/contact";
 import { Footer } from "../components/footer";
 import { Loading } from "../components/loading";
 
-export default function Home() {
+export default function Test() {
   return (
     <div className={styles.container}>
       <Head>
@@ -22,15 +22,6 @@ export default function Home() {
       </Head>
 
       <Loading />
-
-      <Navbar colour="white" />
-      <HeroHome />
-      <HomeIntro />
-      <HomeServices />
-      <HomeStats />
-      <ProjectViewer />
-      <Contact />
-      <Footer />
     </div>
   );
 }

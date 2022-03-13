@@ -27,14 +27,36 @@ module.exports = {
           "0%": { transform: "scale(1.0)" },
           "100%": { transform: "scale(1.1)" },
         },
+        rainbow: {
+          "0%": {
+            transform: "translateY(10px)",
+          },
+          "50%": {
+            transform: "translateY(-10px)",
+          },
+          "100%": {
+            transform: "translateY(10px)",
+          },
+        },
       },
       animation: {
         "card-grow": "grow .2s linear ease-in-out",
+        rainbow: "rainbow 1.5s ease-in-out infinite",
       },
       screens: {
-        lg2: "1300px",
+        xs: { min: "400px", max: "768px" },
+        lg: { min: "1024px", max: "1250px" },
+        md: { min: "768px", max: "1024px" },
+        lg2: { min: "1300px", max: "4000px" },
+        lg3: { min: "1250px", max: "1300px" },
+        sm2: { min: "500px", max: "1250px" },
+        sm3: { min: "400px", max: "500px" },
       },
     },
   },
-  plugins: [require("tailwind-scrollbar"), require("tailwind-scrollbar-hide")],
+  plugins: [
+    require("tailwindcss-animation-delay"),
+    require("tailwind-scrollbar"),
+    require("tailwind-scrollbar-hide"),
+  ],
 };

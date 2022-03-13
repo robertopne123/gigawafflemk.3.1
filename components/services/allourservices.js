@@ -12,9 +12,9 @@ export const AllOurServices = () => {
           Web Design & <br />
           Development
         </h3>
-        <div className="grid grid-cols-3 gap-4 p-2 relative">
+        <div className="grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-4 relative">
           <div className="border-2 border-white flex flex-col gap-2">
-            <div className="w-full h-[250px] bg-white">
+            <div className="w-full h-[250px] bg-white mb-5">
               <img
                 src="/services/serviceImages/webdesign.png"
                 className="h-full mx-auto py-6"
@@ -107,7 +107,7 @@ export const AllOurServices = () => {
               ></img>
             </div>
             <div className="p-4">
-              <p className="text-4xl font-parkson text-white">
+              <p className="text-4xl font-parkson text-whiste">
                 Landing Page Design
               </p>
               <p className="font-poppins text-white">
@@ -153,7 +153,7 @@ export const AllOurServices = () => {
             visual identity & <br />
             brand design
           </h3>
-          <div className="grid grid-cols-3 gap-4 p-2">
+          <div className="grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-4">
             <div className="border-2 border-gigapink flex flex-col gap-2">
               <div className="w-full h-[250px] bg-white border-b-2 border-gigapink">
                 {" "}
@@ -296,12 +296,12 @@ export const AllOurServices = () => {
           </div>
         </div>
         <div className="bg-gigablue py-20">
-          <div className="flex flex-col max-w-[1250px] mx-auto px-4 p-2">
+          <div className="flex flex-col max-w-[1250px] mx-auto px-4">
             <h3 className="text-6xl font-parkson text-black mb-5">
               social strategy & <br />
               content design
             </h3>
-            <div className="grid grid-cols-3 gap-4">
+            <div className="grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-4">
               <div className="border-2 border-black flex flex-col gap-2">
                 <div className="w-full h-[250px] bg-white">
                   <img
@@ -444,13 +444,13 @@ export const AllOurServices = () => {
           </div>
         </div>
         <div className="bg-black py-20">
-          <div className="flex flex-col max-w-[1250px] mx-auto px-4 p-2">
-            <div className="flex flex-row gap-4">
+          <div className="flex flex-col max-w-[1250px] mx-auto px-4">
+            <div className="flex flex-row gap-4 mb-5">
               <h3 className="text-6xl font-parkson text-gigapink leading-[50px] pb-2">
                 podcasts
               </h3>
             </div>
-            <div className="grid grid-cols-3 gap-4 p-2">
+            <div className="grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-4">
               <div className="border-2 border-gigapink relative overflow-clip flex flex-col gap-2">
                 <p className="bg-gigablue absolute right-0 top-0 rotate-45 translate-y-3 translate-x-8 text-black font-parkson px-12">
                   new
