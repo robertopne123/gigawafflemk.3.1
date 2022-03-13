@@ -90,9 +90,9 @@ export const HeroProjects = () => {
               className="font-poppins text-white md:w-1/2 lg2:text-lg lg:text-md sm2:text-base sm3:text-sm text-xs md:min-h-[250px] min-h-[200px] max-h-[200px]"
               id="desc"
             >
-              Here you can find all of the projects we've worked on. You'll find
-              web design projects, branding projects and social media that we've
-              managed.
+              Here you can find all of the projects we&apos;ve worked on.
+              You&apos;ll find web design projects, branding projects and social
+              media that we&apos;ve managed.
               <br />
               <br />
               You can look through all of our projects by scrolling
