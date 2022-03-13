@@ -46,7 +46,6 @@ module.exports = {
       screens: {
         xs: { min: "400px", max: "768px" },
         lg: { min: "1024px", max: "1250px" },
-        md: { min: "768px", max: "1024px" },
         lg2: { min: "1300px", max: "4000px" },
         lg3: { min: "1250px", max: "1300px" },
         sm2: { min: "500px", max: "1250px" },
