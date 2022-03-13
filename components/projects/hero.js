@@ -1,7 +1,7 @@
-import { useEffect } from "react/cjs/react.development";
+import { useEffect } from "react";
 import Link from "next/dist/client/link";
 import React from "react";
-import { useRef } from "react/cjs/react.development";
+import { useRef } from "react";
 
 export const HeroProjects = () => {
   let elementsCol = "";

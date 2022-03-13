@@ -1,5 +1,5 @@
 import ReactPlayer from "react-player";
-import { useState } from "react/cjs/react.development";
+import { useState } from "react";
 import { motion } from "framer-motion";
 
 export const Loading = (props) => {
