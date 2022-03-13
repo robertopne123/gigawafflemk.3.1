@@ -17,8 +17,8 @@ export const Info = () => {
             <br />
             <br />
             With facilities to support podcast creation, video recording and
-            photography, you'll have all the tools you need to create your own
-            engaging content, right in the heart of the Preston City Centre.
+            photography, you&apos;ll have all the tools you need to create your
+            own engaging content, right in the heart of the Preston City Centre.
           </p>
         </div>
       </div>
