@@ -12,7 +12,7 @@ export const AllOurServices = () => {
           Web Design & <br />
           Development
         </h3>
-        <div className="grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-4 relative">
+        <div className="grid lg3:grid-cols-3 lg2:grid-cols-3 lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-4 relative">
           <div className="border-2 border-white flex flex-col gap-2 min-h-[550px]">
             <div className="w-full h-[250px] bg-white">
               <img
@@ -145,7 +145,7 @@ export const AllOurServices = () => {
             visual identity & <br />
             brand design
           </h3>
-          <div className="grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-4">
+          <div className="grid lg3:grid-cols-3 lg2:grid-cols-3 lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-4">
             <div className="border-2 border-gigapink flex flex-col gap-2">
               <div className="w-full h-[250px] bg-white border-b-2 border-gigapink">
                 {" "}
@@ -293,7 +293,7 @@ export const AllOurServices = () => {
               social strategy & <br />
               content design
             </h3>
-            <div className="grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-4">
+            <div className="grid lg3:grid-cols-3 lg2:grid-cols-3 lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-4">
               <div className="border-2 border-black flex flex-col gap-2">
                 <div className="w-full h-[250px] bg-white">
                   <img
@@ -442,7 +442,7 @@ export const AllOurServices = () => {
                 podcasts
               </h3>
             </div>
-            <div className="grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-4">
+            <div className="grid lg3:grid-cols-3 lg2:grid-cols-3 lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-4">
               <div className="border-2 border-gigapink relative overflow-clip flex flex-col gap-2">
                 <p className="bg-gigablue absolute right-0 top-0 rotate-45 translate-y-3 translate-x-8 text-black font-parkson px-12">
                   new

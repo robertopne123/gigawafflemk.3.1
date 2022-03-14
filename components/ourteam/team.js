@@ -49,8 +49,8 @@ export const Team = () => {
         <div className="flex flex-col gap-2">
           <div className="w-[150px] h-[150px] bg-gigapink rounded-full overflow-clip">
             <img
-              src="/staff/7.png"
-              className="h-full w-full object-contain translate-x-2"
+              src="/staff/12.png"
+              className="h-full w-full object-contain scale-[1.20] translate-y-2 -translate-x-1"
             ></img>
           </div>
           <div className="flex flex-col">
