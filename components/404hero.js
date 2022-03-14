@@ -5,7 +5,7 @@ export const HeroError = () => {
         <h1 className="font-parkson lg:text-9xl sm:text-8xl text-7xl">
           OOOPS <br />
           THIS PAGE <br />
-          DOESN'T EXIST
+          DOESN&apos;T EXIST
         </h1>
         <div className="flex flex-row gap-4">
           <div className="group w-[140px] h-[40px] hover:bg-gigapink hover:border-gigapink border-2 border-black flex flex-col justify-center">
