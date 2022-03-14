@@ -29,27 +29,33 @@ export const HeroProjects = () => {
     },
     {
       title: "Grand Venue",
-      desc: "For PlaygroundBullys, we built a website that allowed for their business to be transitioned away from only being run on social media. Their new site included a portfolio of their dogs, information about their services and the ability to book timeslots with them.",
+      desc: "Grand Venue is an event based service which provides a variety of events such as Weddings, Conferences, Catering & Car Hire. We had been contacted by GrandVenue to design another side of their website for their venue in Preston, this was achieved by splitting their homepage in two to show both their locations in Blackburn and Preston.",
       link: "https://playgroundbullysuk.com",
       bg: "url('/grandvenuebg.jpg')",
     },
     {
       title: "My Cabin Bed",
-      desc: "For PlaygroundBullys, we built a website that allowed for their business to be transitioned away from only being run on social media. Their new site included a portfolio of their dogs, information about their services and the ability to book timeslots with them.",
+      desc: "My Cabin Bed Contacted us to help build a new website for their e-commerce. They already had an old website but need it to be brought to date and made to fit in with their new brand guidelines off the company. The website features a simple design that allows the customers to navigate the catalog with ease and a streamlined checkout service that allows the customer the check out in seconds. We have also managed their social media that have grown by 132 followers and increased in post engagements by 689%.",
       link: "https://playgroundbullysuk.com",
       bg: "url('/mycabinbedbg.jpg')",
     },
     {
       title: "Swap My Energy",
-      desc: "For PlaygroundBullys, we built a website that allowed for their business to be transitioned away from only being run on social media. Their new site included a portfolio of their dogs, information about their services and the ability to book timeslots with them.",
+      desc: "For Swap My energy, We created a bespoke design from the ground up, which allows the user to elegantly switch between the business and residential Features of the site. Other features that we developed for the website are a FAQ section and a document upload section to help aid in energy quotes.",
       link: "https://playgroundbullysuk.com",
       bg: "url('/swapmyenergybg.jpg')",
     },
     {
       title: "Unite Cities",
-      desc: "For PlaygroundBullys, we built a website that allowed for their business to be transitioned away from only being run on social media. Their new site included a portfolio of their dogs, information about their services and the ability to book timeslots with them.",
+      desc: "Unite Cities asked us to create them a stylish and modern website design, that could show off their service that they provide and have a live customer review section linked to their google reviews. Unite Cities also wanted an embedded quote forum that would allow them the ability to drastically increase the speed that they send out quotes to customers.",
       link: "https://playgroundbullysuk.com",
       bg: "url('/unitecitiesbg.jpg')",
+    },
+    {
+      title: "Deltic Business",
+      desc: "Deltic wanted a stunning and clear website design to get their newly formed business off the ground. The company works a lot with small to medium size businesses offering business insurance to payment solutions so wanted a website that is easy to read but still looking professional. We have also created and set up custom email addresses for their team to help aid in the professional feel. We are soon to create and launch Deltic's social media accounts that will follow the brand guideline and create that established business feel.",
+      link: "https://playgroundbullysuk.com",
+      bg: "url('/delticbusinessbg.jpg')",
     },
   ];
 
@@ -97,9 +103,7 @@ export const HeroProjects = () => {
               <br />
               You can look through all of our projects by scrolling
               <span className="md:inline hidden"> down</span>
-              <span className="md:hidden inline"> to the right</span>, and you
-              can see a more in-depth look at each project by clicking its cover
-              and looking through the pages.
+              <span className="md:hidden inline"> to the right</span>.
             </p>
             <h1
               id="title"
@@ -133,6 +137,10 @@ export const HeroProjects = () => {
             />
             <img
               src="/projects/unitecities.jpg"
+              className="project md:w-[40%] md:h-auto h-[100%] self-end border-[5px] border-white"
+            />
+            <img
+              src="/projects/delticbusiness.jpg"
               className="project md:w-[40%] md:h-auto h-[100%] self-end border-[5px] border-white"
             />
           </div>

@@ -19,6 +19,7 @@ module.exports = {
         mycabinbed: "url('/projects/mycabinbed.jpg')",
         swapmyenergy: "url('/projects/swapmyenergy.jpg')",
         unitecities: "url('/projects/unitecities.jpg')",
+        delticbusiness: "url('/projects/delticbusiness.jpg')",
         gradient: "url('/gradient.svg')",
         studio: "url('/studio.jpg')",
       },

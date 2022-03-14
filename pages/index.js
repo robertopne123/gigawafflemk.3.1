@@ -8,7 +8,7 @@ import { HomeIntro } from "../components/home/intro";
 import { HomeServices } from "../components/home/services";
 import { HomeStats } from "../components/home/stats";
 import { ProjectViewer } from "../components/home/projects";
-import { Contact } from "../components/home/contact";
+import { Contact } from "../components/contact";
 import { Footer } from "../components/footer";
 import { Loading } from "../components/loading";
 

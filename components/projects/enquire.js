@@ -79,6 +79,22 @@ export const Enquire = () => {
               ></input>
             </div>
           </div>
+          <div className="flex flex-row" id="cameraDiv">
+            <label
+              htmlFor="editContent"
+              className="py-2 px-4 font-parkson text-2xl text-black outline-none"
+            >
+              Will you need us to edit any content?
+            </label>
+            <div className="flex flex-col justify-center">
+              <input
+                type="checkbox"
+                name="editContent"
+                id="editContent"
+                className="py-2 px-4 font-parkson text-2xl bg-black text-white outline-none"
+              ></input>
+            </div>
+          </div>
         </div>
       </div>
     </div>

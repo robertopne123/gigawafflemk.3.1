@@ -1,0 +1,63 @@
+export const Contact = () => {
+  return (
+    <div className="w-full bg-gigapink py-20 px-4">
+      <div className="grid md:grid-cols-2 grid-cols-1 gap-10 max-w-[800px] mx-auto">
+        <div className="flex flex-col gap-4">
+          <p className="font-parkson text-white text-5xl">
+            GET IN TOUCH WITH US
+          </p>
+          <p className="font-poppins text-white">
+            To map out your path to success, our team will talk about your
+            business goals and take a quick look at your digital presence. We'll
+            give you a questionnaire to collect all of the data we need to
+            completely comprehend your project or campaign. After that, one of
+            our relevant specialists will contact you to go over your proposal
+            with you, clarify our reasoning, and forecast your company's growth
+            potential.
+          </p>
+        </div>
+        <div className="flex flex-col gap-4">
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Name"
+            className="py-2 px-4 font-parkson text-2xl outline-none"
+          ></input>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Email"
+            className="py-2 px-4 font-parkson text-2xl outline-none"
+          ></input>
+          <input
+            type="phone"
+            name="phone"
+            id="phone"
+            placeholder="Phone"
+            className="py-2 px-4 font-parkson text-2xl outline-none"
+          ></input>
+          <input
+            type="url"
+            name="url"
+            id="url"
+            placeholder="Website"
+            className="py-2 px-4 font-parkson text-2xl outline-none"
+          ></input>
+          <textarea
+            name="moreInfo"
+            id="moreInfo"
+            placeholder="Tell us more about your project..."
+            className="py-2 px-4 font-parkson text-2xl outline-none"
+          ></textarea>
+          <div className="group w-[140px] h-[40px] bg-black hover:bg-transparent hover:border-black border-2 border-black flex flex-col justify-center">
+            <p className="text-white font-poppins font-semibold text-center group-hover:text-black">
+              Enquire
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
