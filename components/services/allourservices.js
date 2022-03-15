@@ -146,7 +146,7 @@ export const AllOurServices = () => {
             brand design
           </h3>
           <div className="grid lg3:grid-cols-3 lg2:grid-cols-3 lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-4">
-            <div className="border-2 border-gigapink flex flex-col gap-2">
+            <div className="border-2 border-gigapink flex flex-col gap-2 min-h-[550px]">
               <div className="w-full h-[250px] bg-white border-b-2 border-gigapink">
                 {" "}
                 <img
@@ -155,22 +155,22 @@ export const AllOurServices = () => {
                 ></img>
               </div>
               <div className="p-4">
-                <p className="text-3xl font-parkson text-gigapink">
+                <p className="text-3xl font-parkson text-gigapink pb-2">
                   Visual Identity Design
                 </p>
                 <p className="font-poppins text-gigapink">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
-                  dolor ipsum, feugiat at mi eget, varius vulputate nisi. Cras
-                  commodo nulla et dui tincidunt, ut mattis augue aliquam.
-                  Phasellus lorem lacus, laoreet sed lacinia non, eleifend eu
-                  ligula. Sed sodales eros non purus placerat, nec imperdiet
-                  tellus commodo. In hac habitasse platea dictumst. Aliquam
-                  aliquam sit amet ante eget iaculis. Phasellus suscipit
-                  pulvinar justo luctus accumsan. Sed consequat sodales ante.
+                  A visual identity is very important to your brand as it can be
+                  a way to communicate with your customers who you are and how
+                  you represent yourself. These elements include your logo,
+                  colour palette, typography, image style, and general look and
+                  feel. By having your own unique style, you can excel in
+                  formatting your business. Our design team will ensure all
+                  aspects are complimentary to each other in creating a
+                  well-versed platform for yourself.
                 </p>
               </div>
             </div>
-            <div className="border-2 border-gigapink flex flex-col gap-2">
+            <div className="border-2 border-gigapink flex flex-col gap-2 min-h-[550px]">
               <div className="w-full h-[250px] bg-white border-b-2 border-gigapink">
                 <img
                   src="/services/serviceImages/visualrefocus.png"
@@ -178,22 +178,21 @@ export const AllOurServices = () => {
                 ></img>
               </div>
               <div className="p-4">
-                <p className="text-3xl font-parkson text-gigapink">
+                <p className="text-3xl font-parkson text-gigapink pb-2">
                   Visual Refocus
                 </p>
                 <p className="font-poppins text-gigapink">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
-                  dolor ipsum, feugiat at mi eget, varius vulputate nisi. Cras
-                  commodo nulla et dui tincidunt, ut mattis augue aliquam.
-                  Phasellus lorem lacus, laoreet sed lacinia non, eleifend eu
-                  ligula. Sed sodales eros non purus placerat, nec imperdiet
-                  tellus commodo. In hac habitasse platea dictumst. Aliquam
-                  aliquam sit amet ante eget iaculis. Phasellus suscipit
-                  pulvinar justo luctus accumsan. Sed consequat sodales ante.
+                  Having trouble with your current branding format? We can help
+                  to revamp your business and the design and other elements
+                  behind what makes your business personalised. We have done
+                  this ourselves with the website and social media side,
+                  changing our format and implementing a new modernised style.
+                  Sometimes a change can prove very successful if your current
+                  visual identity isn’t helping you excel in terms of engagement
                 </p>
               </div>
             </div>
-            <div className="border-2 border-gigapink flex flex-col gap-2">
+            <div className="border-2 border-gigapink flex flex-col gap-2 min-h-[550px]">
               <div className="w-full h-[250px] bg-white border-b-2 border-gigapink">
                 <img
                   src="/services/serviceImages/logodesign.png"
@@ -201,22 +200,21 @@ export const AllOurServices = () => {
                 ></img>
               </div>
               <div className="p-4">
-                <p className="text-3xl font-parkson text-gigapink">
+                <p className="text-3xl font-parkson text-gigapink pb-2">
                   Logo Design
                 </p>
                 <p className="font-poppins text-gigapink">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
-                  dolor ipsum, feugiat at mi eget, varius vulputate nisi. Cras
-                  commodo nulla et dui tincidunt, ut mattis augue aliquam.
-                  Phasellus lorem lacus, laoreet sed lacinia non, eleifend eu
-                  ligula. Sed sodales eros non purus placerat, nec imperdiet
-                  tellus commodo. In hac habitasse platea dictumst. Aliquam
-                  aliquam sit amet ante eget iaculis. Phasellus suscipit
-                  pulvinar justo luctus accumsan. Sed consequat sodales ante.
+                  Your logo is important to your business because it
+                  communicates ownership, quality, and values. It's imprinted on
+                  your products, your business card, website, social media, and
+                  most importantly, in the minds of your clients. It needs to be
+                  memorable and simple so that it is easily recognisable. All
+                  aspects need to be in proportion and appropriate. Ensure you
+                  logo matches all the criteria which is required.
                 </p>
               </div>
             </div>
-            <div className="border-2 border-gigapink flex flex-col gap-2">
+            <div className="border-2 border-gigapink flex flex-col gap-2 min-h-[550px]">
               <div className="w-full h-[250px] bg-white border-b-2 border-gigapink">
                 <img
                   src="/services/serviceImages/brand.png"
@@ -224,22 +222,20 @@ export const AllOurServices = () => {
                 ></img>
               </div>
               <div className="p-4">
-                <p className="text-3xl font-parkson text-gigapink">
+                <p className="text-3xl font-parkson text-gigapink pb-2">
                   Brand Guidelines
                 </p>
                 <p className="font-poppins text-gigapink">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
-                  dolor ipsum, feugiat at mi eget, varius vulputate nisi. Cras
-                  commodo nulla et dui tincidunt, ut mattis augue aliquam.
-                  Phasellus lorem lacus, laoreet sed lacinia non, eleifend eu
-                  ligula. Sed sodales eros non purus placerat, nec imperdiet
-                  tellus commodo. In hac habitasse platea dictumst. Aliquam
-                  aliquam sit amet ante eget iaculis. Phasellus suscipit
-                  pulvinar justo luctus accumsan. Sed consequat sodales ante.
+                  Brand guidelines are clearly defined rules and standards that
+                  communicate how your brand should be represented to the world.
+                  Brand guidelines help businesses ensure consistency and
+                  demonstrate what the company is, what it does, and what it
+                  stands for. With our knowledge and understanding of this we
+                  can enable your business with appropriate guidelines required.
                 </p>
               </div>
             </div>
-            <div className="border-2 border-gigapink flex flex-col gap-2">
+            <div className="border-2 border-gigapink flex flex-col gap-2 min-h-[550px]">
               <div className="w-full h-[250px] bg-white border-b-2 border-gigapink">
                 <img
                   src="/services/serviceImages/stationary.png"
@@ -247,22 +243,22 @@ export const AllOurServices = () => {
                 ></img>
               </div>
               <div className="p-4">
-                <p className="text-3xl font-parkson text-gigapink">
+                <p className="text-3xl font-parkson text-gigapink pb-2">
                   Stationary Design
                 </p>
                 <p className="font-poppins text-gigapink">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
-                  dolor ipsum, feugiat at mi eget, varius vulputate nisi. Cras
-                  commodo nulla et dui tincidunt, ut mattis augue aliquam.
-                  Phasellus lorem lacus, laoreet sed lacinia non, eleifend eu
-                  ligula. Sed sodales eros non purus placerat, nec imperdiet
-                  tellus commodo. In hac habitasse platea dictumst. Aliquam
-                  aliquam sit amet ante eget iaculis. Phasellus suscipit
-                  pulvinar justo luctus accumsan. Sed consequat sodales ante.
+                  Many businesses use business cards, envelops and letterheads
+                  to create a lasting impression on their customers. In
+                  stationery design, ensure that you use quality images to make
+                  an impact on the targeted customers. Stationery design usually
+                  consists of paper, office supplies, letterheads, writing
+                  equipment, business cards, cases, and other similar items. The
+                  entire goal is to have beautiful branding throughout the
+                  company which we can ensure.
                 </p>
               </div>
             </div>
-            <div className="border-2 border-gigapink flex flex-col gap-2">
+            <div className="border-2 border-gigapink flex flex-col gap-2 min-h-[550px]">
               <div className="w-full h-[250px] bg-white border-b-2 border-gigapink">
                 <img
                   src="/services/serviceImages/creativedesign.png"
@@ -270,18 +266,16 @@ export const AllOurServices = () => {
                 ></img>
               </div>
               <div className="p-4">
-                <p className="text-3xl font-parkson text-gigapink">
+                <p className="text-3xl font-parkson text-gigapink pb-2">
                   Creative Design
                 </p>
                 <p className="font-poppins text-gigapink">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
-                  dolor ipsum, feugiat at mi eget, varius vulputate nisi. Cras
-                  commodo nulla et dui tincidunt, ut mattis augue aliquam.
-                  Phasellus lorem lacus, laoreet sed lacinia non, eleifend eu
-                  ligula. Sed sodales eros non purus placerat, nec imperdiet
-                  tellus commodo. In hac habitasse platea dictumst. Aliquam
-                  aliquam sit amet ante eget iaculis. Phasellus suscipit
-                  pulvinar justo luctus accumsan. Sed consequat sodales ante.
+                  Creative design involves using computer-generated imagery and
+                  digital animation to visualise a product. It aims to produce
+                  unique and memorable designs that stand out so that customers
+                  may easily identify a brand or product. Utilising our high
+                  processing computers, we are able to fulfil any kind of design
+                  you require.
                 </p>
               </div>
             </div>
@@ -294,7 +288,7 @@ export const AllOurServices = () => {
               content design
             </h3>
             <div className="grid lg3:grid-cols-3 lg2:grid-cols-3 lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-4">
-              <div className="border-2 border-black flex flex-col gap-2">
+              <div className="border-2 border-black flex flex-col gap-2 min-h-[550px]">
                 <div className="w-full h-[250px] bg-white">
                   <img
                     src="/services/serviceImages/socialmgmt.png"
@@ -302,22 +296,20 @@ export const AllOurServices = () => {
                   ></img>
                 </div>
                 <div className="p-4">
-                  <p className="text-3xl font-parkson text-black">
+                  <p className="text-3xl font-parkson text-black pb-2">
                     Social Media Management
                   </p>
                   <p className="font-poppins text-black">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
-                    dolor ipsum, feugiat at mi eget, varius vulputate nisi. Cras
-                    commodo nulla et dui tincidunt, ut mattis augue aliquam.
-                    Phasellus lorem lacus, laoreet sed lacinia non, eleifend eu
-                    ligula. Sed sodales eros non purus placerat, nec imperdiet
-                    tellus commodo. In hac habitasse platea dictumst. Aliquam
-                    aliquam sit amet ante eget iaculis. Phasellus suscipit
-                    pulvinar justo luctus accumsan. Sed consequat sodales ante.
+                    We can take away the stress of social media and work on
+                    engaging social posts that help get your customers
+                    interacting and help grow your business, so you can focus on
+                    your business. We deal with the content, strategy,
+                    enquiries, partnership and more, whilst keeping you in the
+                    loop, through regular contact and monthly statistic reports.
                   </p>
                 </div>
               </div>
-              <div className="border-2 border-black flex flex-col gap-2">
+              <div className="border-2 border-black flex flex-col gap-2 min-h-[550px]">
                 <div className="w-full h-[250px] bg-white">
                   <img
                     src="/services/serviceImages/contentstrategy.png"
@@ -325,22 +317,21 @@ export const AllOurServices = () => {
                   ></img>
                 </div>
                 <div className="p-4">
-                  <p className="text-3xl font-parkson text-black">
+                  <p className="text-3xl font-parkson text-black pb-2">
                     Social Media Content Strategy
                   </p>
                   <p className="font-poppins text-black">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
-                    dolor ipsum, feugiat at mi eget, varius vulputate nisi. Cras
-                    commodo nulla et dui tincidunt, ut mattis augue aliquam.
-                    Phasellus lorem lacus, laoreet sed lacinia non, eleifend eu
-                    ligula. Sed sodales eros non purus placerat, nec imperdiet
-                    tellus commodo. In hac habitasse platea dictumst. Aliquam
-                    aliquam sit amet ante eget iaculis. Phasellus suscipit
-                    pulvinar justo luctus accumsan. Sed consequat sodales ante.
+                    Get a bold and powerful edge over your competitors on
+                    Facebook, Instagram, YouTube and more with a paid social
+                    media content strategy from gigawaffle. Deliver
+                    unforgettable, branded content experiences that are
+                    specially crafted for your target audience, designed to
+                    demolish your targets and help engage your customers, to
+                    help your business grow.
                   </p>
                 </div>
               </div>
-              <div className="border-2 border-black flex flex-col gap-2">
+              <div className="border-2 border-black flex flex-col gap-2 min-h-[550px]">
                 <div className="w-full h-[250px] bg-white">
                   <img
                     src="/services/serviceImages/emailmarketing.png"
@@ -348,22 +339,19 @@ export const AllOurServices = () => {
                   ></img>
                 </div>
                 <div className="p-4">
-                  <p className="text-3xl font-parkson text-black">
+                  <p className="text-3xl font-parkson text-black pb-2">
                     Email Marketing
                   </p>
                   <p className="font-poppins text-black">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
-                    dolor ipsum, feugiat at mi eget, varius vulputate nisi. Cras
-                    commodo nulla et dui tincidunt, ut mattis augue aliquam.
-                    Phasellus lorem lacus, laoreet sed lacinia non, eleifend eu
-                    ligula. Sed sodales eros non purus placerat, nec imperdiet
-                    tellus commodo. In hac habitasse platea dictumst. Aliquam
-                    aliquam sit amet ante eget iaculis. Phasellus suscipit
-                    pulvinar justo luctus accumsan. Sed consequat sodales ante.
+                    Promote your business directly to your customers using the
+                    power of email. Whether its for one-off promos or whether
+                    you want to provide a weekly newsletter, our team can create
+                    engaging email content to suit your business and what you
+                    have to offer.
                   </p>
                 </div>
               </div>
-              <div className="border-2 border-black flex flex-col gap-2">
+              <div className="border-2 border-black flex flex-col gap-2 min-h-[550px]">
                 <div className="w-full h-[250px] bg-white">
                   <img
                     src="/services/serviceImages/advertising.png"
@@ -371,22 +359,18 @@ export const AllOurServices = () => {
                   ></img>
                 </div>
                 <div className="p-4">
-                  <p className="text-3xl font-parkson text-black">
+                  <p className="text-3xl font-parkson text-black pb-2">
                     Social Media Advertising
                   </p>
                   <p className="font-poppins text-black">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
-                    dolor ipsum, feugiat at mi eget, varius vulputate nisi. Cras
-                    commodo nulla et dui tincidunt, ut mattis augue aliquam.
-                    Phasellus lorem lacus, laoreet sed lacinia non, eleifend eu
-                    ligula. Sed sodales eros non purus placerat, nec imperdiet
-                    tellus commodo. In hac habitasse platea dictumst. Aliquam
-                    aliquam sit amet ante eget iaculis. Phasellus suscipit
-                    pulvinar justo luctus accumsan. Sed consequat sodales ante.
+                    Our experts can plan and create advertisements to showcase
+                    your products or services, bring traffic to your website,
+                    and/or to promote brand awareness, all with a targetted
+                    audience across Facebook, Instagram, Linked-in & tiktok.
                   </p>
                 </div>
               </div>
-              <div className="border-2 border-black flex flex-col gap-2">
+              <div className="border-2 border-black flex flex-col gap-2 min-h-[550px]">
                 <div className="w-full h-[250px] bg-white">
                   <img
                     src="/services/serviceImages/contentcreation.png"
@@ -394,22 +378,18 @@ export const AllOurServices = () => {
                   ></img>
                 </div>
                 <div className="p-4">
-                  <p className="text-3xl font-parkson text-black">
+                  <p className="text-3xl font-parkson text-black pb-2">
                     Content Creation
                   </p>
                   <p className="font-poppins text-black">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
-                    dolor ipsum, feugiat at mi eget, varius vulputate nisi. Cras
-                    commodo nulla et dui tincidunt, ut mattis augue aliquam.
-                    Phasellus lorem lacus, laoreet sed lacinia non, eleifend eu
-                    ligula. Sed sodales eros non purus placerat, nec imperdiet
-                    tellus commodo. In hac habitasse platea dictumst. Aliquam
-                    aliquam sit amet ante eget iaculis. Phasellus suscipit
-                    pulvinar justo luctus accumsan. Sed consequat sodales ante.
+                    We can create engaging video content to promote your
+                    products/services ready to put on your website and/or social
+                    media's. Our team can create content which shows off the
+                    best bits of your products/services.
                   </p>
                 </div>
               </div>
-              <div className="border-2 border-black flex flex-col gap-2">
+              <div className="border-2 border-black flex flex-col gap-2 min-h-[550px]">
                 <div className="w-full h-[250px] bg-white">
                   <img
                     src="/services/serviceImages/seo.png"
@@ -417,18 +397,13 @@ export const AllOurServices = () => {
                   ></img>
                 </div>
                 <div className="p-4">
-                  <p className="text-3xl font-parkson text-black">
+                  <p className="text-3xl font-parkson text-black pb-2">
                     Search Engine Optimisation
                   </p>
                   <p className="font-poppins text-black">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
-                    dolor ipsum, feugiat at mi eget, varius vulputate nisi. Cras
-                    commodo nulla et dui tincidunt, ut mattis augue aliquam.
-                    Phasellus lorem lacus, laoreet sed lacinia non, eleifend eu
-                    ligula. Sed sodales eros non purus placerat, nec imperdiet
-                    tellus commodo. In hac habitasse platea dictumst. Aliquam
-                    aliquam sit amet ante eget iaculis. Phasellus suscipit
-                    pulvinar justo luctus accumsan. Sed consequat sodales ante.
+                    We take an in-depth look at your website and its content and
+                    regularly make SEO tweaks and SEO-focused content to help
+                    maximise your websites potential online.
                   </p>
                 </div>
               </div>
@@ -443,7 +418,7 @@ export const AllOurServices = () => {
               </h3>
             </div>
             <div className="grid lg3:grid-cols-3 lg2:grid-cols-3 lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-4">
-              <div className="border-2 border-gigapink relative overflow-clip flex flex-col gap-2">
+              <div className="border-2 border-gigapink relative overflow-clip flex flex-col gap-2 min-h-[550px]">
                 <p className="bg-gigablue absolute right-0 top-0 rotate-45 translate-y-3 translate-x-8 text-black font-parkson px-12">
                   new
                 </p>
@@ -454,22 +429,22 @@ export const AllOurServices = () => {
                   ></img>
                 </div>
                 <div className="p-4">
-                  <p className="text-3xl font-parkson text-gigapink">
+                  <p className="text-3xl font-parkson text-gigapink pb-2">
                     Podcast Recording
                   </p>
                   <p className="font-poppins text-gigapink">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
-                    dolor ipsum, feugiat at mi eget, varius vulputate nisi. Cras
-                    commodo nulla et dui tincidunt, ut mattis augue aliquam.
-                    Phasellus lorem lacus, laoreet sed lacinia non, eleifend eu
-                    ligula. Sed sodales eros non purus placerat, nec imperdiet
-                    tellus commodo. In hac habitasse platea dictumst. Aliquam
-                    aliquam sit amet ante eget iaculis. Phasellus suscipit
-                    pulvinar justo luctus accumsan. Sed consequat sodales ante.
+                    Anyone who wants a podcast can book a slot in our studio
+                    called The Waffle Corner. We provide great sound proofing
+                    and quality microphones for your recording needs. There are
+                    a plethora of different podcast necessities including sofas,
+                    tripods, a green screen, and a soft box for your lighting.
+                    We have an ultimate podcast set up just for our customers.
+                    We help brands, influencers and personalities discover the
+                    power of podcasting to build audiences.
                   </p>
                 </div>
               </div>
-              <div className="border-2 border-gigapink relative overflow-clip flex flex-col gap-2">
+              <div className="border-2 border-gigapink relative overflow-clip flex flex-col gap-2 min-h-[550px]">
                 <p className="bg-gigablue absolute right-0 top-0 rotate-45 translate-y-3 translate-x-8 text-black font-parkson px-12">
                   new
                 </p>
@@ -480,22 +455,22 @@ export const AllOurServices = () => {
                   ></img>
                 </div>
                 <div className="p-4">
-                  <p className="text-3xl font-parkson text-gigapink">
+                  <p className="text-3xl font-parkson text-gigapink pb-2">
                     Podcast Production
                   </p>
                   <p className="font-poppins text-gigapink">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
-                    dolor ipsum, feugiat at mi eget, varius vulputate nisi. Cras
-                    commodo nulla et dui tincidunt, ut mattis augue aliquam.
-                    Phasellus lorem lacus, laoreet sed lacinia non, eleifend eu
-                    ligula. Sed sodales eros non purus placerat, nec imperdiet
-                    tellus commodo. In hac habitasse platea dictumst. Aliquam
-                    aliquam sit amet ante eget iaculis. Phasellus suscipit
-                    pulvinar justo luctus accumsan. Sed consequat sodales ante.
+                    Our editors/videographers will ensure stability and
+                    structure in your podcasts taking care and precision making
+                    sure that your podcast looks the part. They will be precise
+                    in where they need to edit out certain parts and add effects
+                    and cuts to help keep the flow of your podcast intact. When
+                    you utilise, us you will be guaranteed full effort from each
+                    of our team to make your podcast as engaging and easy to
+                    listen to as possible.
                   </p>
                 </div>
               </div>
-              <div className="border-2 border-gigapink relative overflow-clip flex flex-col gap-2">
+              <div className="border-2 border-gigapink relative overflow-clip flex flex-col gap-2 min-h-[550px]">
                 <p className="bg-gigablue absolute right-0 top-0 rotate-45 translate-y-3 translate-x-8 text-black font-parkson px-12">
                   new
                 </p>
@@ -506,18 +481,15 @@ export const AllOurServices = () => {
                   ></img>
                 </div>
                 <div className="p-4">
-                  <p className="text-3xl font-parkson text-gigapink">
+                  <p className="text-3xl font-parkson text-gigapink pb-2">
                     Podcast Management
                   </p>
                   <p className="font-poppins text-gigapink">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
-                    dolor ipsum, feugiat at mi eget, varius vulputate nisi. Cras
-                    commodo nulla et dui tincidunt, ut mattis augue aliquam.
-                    Phasellus lorem lacus, laoreet sed lacinia non, eleifend eu
-                    ligula. Sed sodales eros non purus placerat, nec imperdiet
-                    tellus commodo. In hac habitasse platea dictumst. Aliquam
-                    aliquam sit amet ante eget iaculis. Phasellus suscipit
-                    pulvinar justo luctus accumsan. Sed consequat sodales ante.
+                    Managing podcasts couldn’t be more essential when trying to
+                    increase listeners. Uploading and controlling them can be
+                    made simple with us. We will render and transcript your
+                    podcasts as efficiently and effectively as we can so that
+                    you don’t have to deal with the time and stress of it.
                   </p>
                 </div>
               </div>
