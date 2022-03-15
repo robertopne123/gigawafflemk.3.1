@@ -205,12 +205,13 @@ export const AllOurServices = () => {
                 </p>
                 <p className="font-poppins text-gigapink">
                   Your logo is important to your business because it
-                  communicates ownership, quality, and values. It's imprinted on
-                  your products, your business card, website, social media, and
-                  most importantly, in the minds of your clients. It needs to be
-                  memorable and simple so that it is easily recognisable. All
-                  aspects need to be in proportion and appropriate. Ensure you
-                  logo matches all the criteria which is required.
+                  communicates ownership, quality, and values. It&apos;s
+                  imprinted on your products, your business card, website,
+                  social media, and most importantly, in the minds of your
+                  clients. It needs to be memorable and simple so that it is
+                  easily recognisable. All aspects need to be in proportion and
+                  appropriate. Ensure you logo matches all the criteria which is
+                  required.
                 </p>
               </div>
             </div>
@@ -384,8 +385,8 @@ export const AllOurServices = () => {
                   <p className="font-poppins text-black">
                     We can create engaging video content to promote your
                     products/services ready to put on your website and/or social
-                    media's. Our team can create content which shows off the
-                    best bits of your products/services.
+                    media&apos;s. Our team can create content which shows off
+                    the best bits of your products/services.
                   </p>
                 </div>
               </div>
