@@ -8,12 +8,12 @@ export const Contact = () => {
           </p>
           <p className="font-poppins text-white">
             To map out your path to success, our team will talk about your
-            business goals and take a quick look at your digital presence. We'll
-            give you a questionnaire to collect all of the data we need to
-            completely comprehend your project or campaign. After that, one of
-            our relevant specialists will contact you to go over your proposal
-            with you, clarify our reasoning, and forecast your company's growth
-            potential.
+            business goals and take a quick look at your digital presence.
+            We&apos;ll give you a questionnaire to collect all of the data we
+            need to completely comprehend your project or campaign. After that,
+            one of our relevant specialists will contact you to go over your
+            proposal with you, clarify our reasoning, and forecast your
+            company&apos;s growth potential.
           </p>
         </div>
         <div className="flex flex-col gap-4">
