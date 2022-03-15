@@ -15,11 +15,11 @@ export const Navbar = (props) => {
 
   return (
     <div
-      className={`w-full px-4 py-4 ${
+      className={`w-full py-4 ${
         props.colour === "black" ? "bg-black" : "bg-white"
       }`}
     >
-      <div className="max-w-[1250px] mx-auto flex flex-row justify-between">
+      <div className="max-w-[1250px] mx-auto flex flex-row justify-between px-4 ">
         <Link href="/">
           <a>
             <img
@@ -53,6 +53,13 @@ export const Navbar = (props) => {
           </div>
         </div>
       </div>
+      <div className="h-screen w-screen absolute fixed top-0 hidden">
+        <div
+          className="bg-gigapink h-1 w-screen bottom-0 absolute hidden"
+          id="myBar"
+        ></div>
+      </div>
+
       <motion.nav
         animate={isOpen ? "open" : "closed"}
         variants={variants}
