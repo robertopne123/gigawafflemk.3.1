@@ -1,7 +1,7 @@
 export const Contact = () => {
   return (
-    <div className="w-full bg-gigapink py-20 px-4">
-      <div className="grid md:grid-cols-2 grid-cols-1 gap-10 max-w-[800px] mx-auto">
+    <div className="w-full bg-gigapink py-20 px-4" id="enquire">
+      <div className="grid md:grid-cols-2 grid-cols-1 gap-10 max-w-[1250px] mx-auto">
         <div className="flex flex-col gap-4">
           <p className="font-parkson text-white text-5xl">
             GET IN TOUCH WITH US
@@ -17,45 +17,56 @@ export const Contact = () => {
           </p>
         </div>
         <div className="flex flex-col gap-4">
-          <input
-            type="text"
-            name="name"
-            id="name"
-            placeholder="Name"
-            className="py-2 px-4 font-parkson text-2xl outline-none"
-          ></input>
-          <input
-            type="email"
-            name="email"
-            id="email"
-            placeholder="Email"
-            className="py-2 px-4 font-parkson text-2xl outline-none"
-          ></input>
-          <input
-            type="phone"
-            name="phone"
-            id="phone"
-            placeholder="Phone"
-            className="py-2 px-4 font-parkson text-2xl outline-none"
-          ></input>
-          <input
-            type="url"
-            name="url"
-            id="url"
-            placeholder="Website"
-            className="py-2 px-4 font-parkson text-2xl outline-none"
-          ></input>
-          <textarea
-            name="moreInfo"
-            id="moreInfo"
-            placeholder="Tell us more about your project..."
-            className="py-2 px-4 font-parkson text-2xl outline-none"
-          ></textarea>
-          <div className="group w-[140px] h-[40px] bg-black hover:bg-transparent hover:border-black border-2 border-black flex flex-col justify-center">
-            <p className="text-white font-poppins font-semibold text-center group-hover:text-black">
+          <form
+            className="flex flex-col gap-4"
+            name="enquiryForm"
+            method="POST"
+            action="/success"
+            netlify-honeypot="bot-field"
+            data-netlify="true"
+          >
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Name *"
+              className="py-2 px-4 font-parkson text-2xl outline-none"
+            ></input>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Email *"
+              required
+              className="py-2 px-4 font-parkson text-2xl outline-none"
+            ></input>
+            <input
+              type="phone"
+              name="phone"
+              id="phone"
+              placeholder="Phone"
+              className="py-2 px-4 font-parkson text-2xl outline-none"
+            ></input>
+            <input
+              type="url"
+              name="url"
+              id="url"
+              placeholder="Website"
+              className="py-2 px-4 font-parkson text-2xl outline-none"
+            ></input>
+            <textarea
+              name="moreInfo"
+              id="moreInfo"
+              placeholder="Tell us more about your project..."
+              className="py-2 px-4 font-parkson text-2xl outline-none"
+            ></textarea>
+            <button
+              type="submit"
+              className="group w-[140px] h-[40px] bg-black hover:bg-transparent hover:border-black border-2 border-black text-white font-poppins font-semibold text-center group-hover:text-black"
+            >
               Enquire
-            </p>
-          </div>
+            </button>
+          </form>
         </div>
       </div>
     </div>

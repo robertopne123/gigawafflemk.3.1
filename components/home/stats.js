@@ -1,3 +1,48 @@
+import { animate, motion } from "framer-motion";
+import React, { useEffect, useRef } from "react";
+import { useInView } from "react-intersection-observer";
+
+function Counter({ from, to, colour }) {
+  const ref = useRef();
+
+  useEffect(() => {
+    const controls = animate(from, to, {
+      duration: 1,
+      onUpdate(value) {
+        ref.current.textContent = "+" + value.toFixed(0) + "%";
+      },
+    });
+    return () => controls.stop();
+  }, [from, to]);
+
+  return (
+    <motion.h3
+      ref={ref}
+      className={`font-parkson text-center text-6xl text-${colour}`}
+    ></motion.h3>
+  );
+
+  // useEffect(() => {
+  //   if (inView) {
+  //     const controls = animate(from, to, {
+  //       duration: 1,
+  //       onUpdate(value) {
+  //         ref.current.textContent = "+" + value.toFixed(0) + "%";
+  //       },
+  //     });
+  //   }
+  //   return () => controls.stop();
+  // }, [from, to]);
+
+  // return (
+  //   <p
+  //     className={`font-parkson text-center text-6xl text-${colour}`}
+  //     ref={ref}
+  //     animate={controls}
+  //   />
+  // );
+}
+
 export const HomeStats = () => {
   return (
     <div className="bg-gigablue w-full px-4 py-20 relative">
@@ -8,20 +53,35 @@ export const HomeStats = () => {
         <div className="bg-black h-[30px] w-[30px]"></div>
       </div>
       <div className="max-w-[1250px] mx-auto grid md:grid-cols-3 grid-cols-1 gap-10">
-        <div className="h-[200px] w-[200px] bg-white rounded-full flex flex-col justify-center mx-auto">
-          <h3 className="font-parkson text-center text-6xl">+205%</h3>
+        <motion.div
+          whileInView="visible"
+          viewport={{ once: true }}
+          className="h-[200px] w-[200px] bg-white rounded-full flex flex-col justify-center mx-auto"
+        >
+          <Counter from={0} to={205} colour="black" />
+          {/* <h3 className="font-parkson text-center text-6xl">+205%</h3> */}
           <p className="font-parkson text-center text-3xl">Traffic</p>
-        </div>
-        <div className="h-[200px] w-[200px] bg-gigapink rounded-full flex flex-col justify-center mx-auto">
-          <h3 className="font-parkson text-center text-6xl">+333%</h3>
+        </motion.div>
+        <motion.div
+          whileInView="visible"
+          viewport={{ once: true }}
+          className="h-[200px] w-[200px] bg-gigapink rounded-full flex flex-col justify-center mx-auto"
+        >
+          <Counter from={0} to={333} colour="black" />
+          {/* <h3 className="font-parkson text-center text-6xl">+333%</h3> */}
           <p className="font-parkson text-center text-3xl">Reach</p>
-        </div>
-        <div className="h-[200px] w-[200px] bg-black rounded-full flex flex-col justify-center mx-auto">
-          <h3 className="font-parkson text-center text-6xl text-white">
+        </motion.div>
+        <motion.div
+          whileInView="visible"
+          viewport={{ once: true }}
+          className="h-[200px] w-[200px] bg-black rounded-full flex flex-col justify-center mx-auto"
+        >
+          <Counter from={0} to={155} colour="white" />
+          {/* <h3 className="font-parkson text-center text-6xl text-white">
             +155%
-          </h3>
+          </h3> */}
           <p className="font-parkson text-center text-3xl text-white">Clicks</p>
-        </div>
+        </motion.div>
       </div>
     </div>
   );

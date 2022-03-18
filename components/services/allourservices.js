@@ -1,6 +1,6 @@
 export const AllOurServices = () => {
   return (
-    <div className="w-full pt-20 bg-gigapink relative">
+    <div className="w-full pt-20 bg-gigapink relative" id="webdesign">
       <div className="absolute top-0 right-0 h-[30px] w-[120px] flex flex-row -translate-y-[30px]">
         <div className="bg-gigapink h-[30px] w-[30px]"></div>
         <div className="bg-gigablue h-[30px] w-[30px]"></div>
@@ -139,7 +139,7 @@ export const AllOurServices = () => {
           </div>
         </div>
       </div>
-      <div className="bg-white pt-20">
+      <div className="bg-white pt-20" id="branddesign">
         <div className="max-w-[1250px] mx-auto px-4 pb-20">
           <h3 className="text-6xl font-parkson text-gigapink mb-5">
             visual identity & <br />
@@ -282,7 +282,7 @@ export const AllOurServices = () => {
             </div>
           </div>
         </div>
-        <div className="bg-gigablue py-20">
+        <div className="bg-gigablue py-20" id="socialmedia">
           <div className="flex flex-col max-w-[1250px] mx-auto px-4">
             <h3 className="text-6xl font-parkson text-black mb-5">
               social strategy & <br />

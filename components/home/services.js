@@ -1,6 +1,7 @@
 import * as React from "react";
 import useMouse from "@react-hook/mouse-position";
 import MagicHover from "magic-hover";
+import Link from "next/link";
 
 export const HomeServices = () => {
   const options = {
@@ -54,47 +55,59 @@ export const HomeServices = () => {
 
   return (
     <div className="w-full px-4 py-20">
-      <div className="max-w-[1250px] mx-auto grid md:grid-cols-3 grid-cols-1 md:gap-0 gap-10">
-        <div className="group flex flex-col mx-auto lg:gap-0 md:gap-4 gap-0">
-          <div className="flex flex-row">
-            <img
-              src="/services/webdesign.png"
-              id="inner"
-              className="lg:h-[190px] md:h-[150px] h-[190px]"
-            />
-          </div>
-          <div className="w-[120px] h-[40px] group-hover:bg-gigablue group-hover:border-gigablue border-2 border-gigablue flex flex-col justify-center -translate-y-[25px] -z-20">
-            <p className="font-poppins font-semibold text-center group-hover:text-white">
-              Take A Look
-            </p>
-          </div>
-        </div>
-        <div className="group flex flex-col mx-auto lg:gap-0 md:gap-4 gap-0">
-          <div className="flex flex-row">
-            <img
-              src="/services/branding.png"
-              className="lg:h-[190px] md:h-[150px] h-[190px]"
-            />
-          </div>
-          <div className="w-[120px] h-[40px] group-hover:bg-gigablue group-hover:border-gigablue border-2 border-gigablue flex flex-col justify-center -translate-y-[25px] -z-20">
-            <p className="font-poppins font-semibold text-center group-hover:text-white">
-              Take A Look
-            </p>
-          </div>
-        </div>
-        <div className="group flex flex-col mx-auto lg:gap-0 md:gap-4 gap-0">
-          <div className="flex flex-row">
-            <img
-              src="/services/socialmedia.png"
-              className="lg:h-[190px] md:h-[150px] h-[190px]"
-            />
-          </div>
-          <div className="w-[120px] h-[40px] group-hover:bg-gigablue group-hover:border-gigablue border-2 border-gigablue flex flex-col justify-center -translate-y-[25px] -z-20">
-            <p className="font-poppins font-semibold text-center group-hover:text-white">
-              Take A Look
-            </p>
-          </div>
-        </div>
+      <div className="max-w-[1250px] mx-auto grid md:grid-cols-3 grid-cols-1 md:gap-0 gap-10 w-auto">
+        <Link href="/services#webdesign">
+          <a>
+            <div className="group flex flex-col mr-auto lg:gap-0 md:gap-4 gap-0 w-[250px]">
+              <div className="flex flex-row">
+                <img
+                  src="/services/webdesign.png"
+                  id="inner"
+                  className="lg:h-[210px] md:h-[210px] h-[210px] object-contain"
+                />
+              </div>
+              <div className="w-[120px] h-[40px] group-hover:bg-gigablue group-hover:border-gigablue border-2 border-gigablue flex flex-col justify-center -translate-y-[55px] -z-20">
+                <p className="font-poppins font-semibold text-center group-hover:text-white">
+                  Take A Look
+                </p>
+              </div>
+            </div>
+          </a>
+        </Link>
+        <Link href="/services#branddesign">
+          <a>
+            <div className="group flex flex-col mx-auto lg:gap-0 md:gap-4 gap-0 w-[250px]">
+              <div className="flex flex-row">
+                <img
+                  src="/services/branding.png"
+                  className="lg:h-[210px] md:h-[210px] h-[210px] object-contain"
+                />
+              </div>
+              <div className="w-[120px] h-[40px] group-hover:bg-gigablue group-hover:border-gigablue border-2 border-gigablue flex flex-col justify-center -translate-y-[55px] -z-20">
+                <p className="font-poppins font-semibold text-center group-hover:text-white">
+                  Take A Look
+                </p>
+              </div>
+            </div>
+          </a>
+        </Link>
+        <Link href="/services#socialmedia">
+          <a>
+            <div className="group flex flex-col ml-auto lg:gap-0 md:gap-4 gap-0 w-[250px]">
+              <div className="flex flex-row">
+                <img
+                  src="/services/socialmedia.png"
+                  className="lg:h-[210px] md:h-[210px] h-[210px] object-contain"
+                />
+              </div>
+              <div className="w-[120px] h-[40px] group-hover:bg-gigablue group-hover:border-gigablue border-2 border-gigablue flex flex-col justify-center -translate-y-[55px] -z-20">
+                <p className="font-poppins font-semibold text-center group-hover:text-white">
+                  Take A Look
+                </p>
+              </div>
+            </div>
+          </a>
+        </Link>
       </div>
     </div>
   );
