@@ -29,10 +29,7 @@ export const HomeIntro = () => {
           </p>
         </div>
         <div className="flex flex-col justify-center relative">
-          <img
-            src="/waffles.png"
-            className="absolute left-32 h-[400px] object-contain"
-          />
+          <img src="/waffles.png" className="h-[400px] object-contain" />
           <div className="bg-gray-800 aspect-video flex flex-col justify-center relative hidden">
             <div className="absolute top-0 left-0 h-[60px] w-[15px] flex flex-col">
               <div className="bg-gigapink h-[15px] w-[15px]"></div>
