@@ -132,13 +132,13 @@ export const Navbar = (props) => {
               </h3>
             </a>
           </Link>
-          <Link href="/podcasts">
+          {/* <Link href="/podcasts">
             <a>
               <h3 className="font-parkson text-white text-8xl hover:text-black -translate-y-20">
                 Podcasts
               </h3>
             </a>
-          </Link>
+          </Link> */}
         </div>
       </motion.nav>
     </div>
