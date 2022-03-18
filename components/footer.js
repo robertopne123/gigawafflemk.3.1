@@ -51,6 +51,27 @@ export const Footer = () => {
               </li>
             </ul>
           </div>
+          <p className="mt-5 font-poppins text-gigapink text-lg md:text-left text-center">
+            Contact
+          </p>
+          <Link href="tel: 01772 584880">
+            <a className="">
+              <div className="flex flex-row group md:justify-start justify-center">
+                <p className="font-parkson text-white text-2xl uppercase group-hover:text-gigapink">
+                  01772 584880 (Option 2)
+                </p>
+              </div>
+            </a>
+          </Link>
+          <Link href="mailto: hello@gigawaffle.co.uk">
+            <a className="">
+              <div className="flex flex-row group md:justify-start justify-center">
+                <p className="font-parkson text-white text-2xl uppercase group-hover:text-gigapink">
+                  hello@gigawaffle.co.uk
+                </p>
+              </div>
+            </a>
+          </Link>
         </div>
         <div className="flex flex-col mx-auto w-[30%] md:mr-auto">
           <p className="font-poppins text-gigapink text-lg md:text-left text-center">
