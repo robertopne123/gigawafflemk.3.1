@@ -1,6 +1,9 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
 import Link from "next/link";
+import { useQuery } from "@apollo/client";
+import { gql } from "@apollo/client";
+import CartContext from "./shop/context";
 
 const variants = {
   open: {
@@ -12,6 +15,47 @@ const variants = {
 
 export const Navbar = (props) => {
   const [isOpen, setIsOpen] = useState(false);
+
+  // const GETCARTCOUNT = gql`
+  //   query Cart {
+  //     cart {
+  //       contents {
+  //         itemCount
+  //       }
+  //     }
+  //   }
+  // `;
+
+  // const { data, loading, error } = useQuery(GETCARTCOUNT);
+
+  // console.log(data?.cart.contents.itemCount);
+
+  // const [cartItems, setCartItems] = useState([]);
+  // const [cartCount, setCartCount] = useState(0);
+
+  // const addToCart = (product) => {
+  //   var updatedItems = [...cartItems];
+
+  //   let existIndex = updatedItems.findIndex((item) => item.id === product.id);
+  //   if (existIndex >= 0) {
+  //     updatedItems[existIndex].quantity = updatedItems[existIndex].quantity
+  //       ? updatedItems[existIndex].quantity++
+  //       : 2;
+  //     setCartItems(updatedItems);
+  //   } else {
+  //     setCartItems([...cartItems, product]);
+  //   }
+
+  //   setCartCount(cartCount + 1);
+  // };
+
+  // const removeFromCart = (product) => {
+  //   let removeIndex = cartItems.findIndex((item) => item.id === product.id);
+  //   let newitems = cartItems.splice(removeIndex, 1);
+  //   setCartItems(newitems);
+
+  //   setCartCount(cartCount - 1);
+  // };
 
   return (
     <div
@@ -30,26 +74,36 @@ export const Navbar = (props) => {
             />
           </a>
         </Link>
-        <div className="flex flex-col justify-center">
-          <div
-            className="flex flex-col justify-between first:gap-1 w-[35px] h-[30px] group cursor-pointer"
-            onClick={() => setIsOpen((isOpen) => !isOpen)}
+        <div className="flex flex-row gap-4">
+          {/* <div
+            className={`flex-row ${props.shop == "show" ? "flex" : "hidden"}`}
           >
+            <img src="/shop.svg" className="w-[40px]" />
+            <p className="font-poppins bg-black h-[15px] w-[15px] text-center rounded-full translate-y-1 -translate-x-1 text-xs text-white">
+              {cartCount}
+            </p>
+          </div> */}
+          <div className="flex flex-col justify-center">
             <div
-              className={`h-[5px] w-full group-hover:bg-gigapink ${
-                props.colour === "black" ? "bg-white" : "bg-black"
-              }`}
-            ></div>
-            <div
-              className={`h-[5px] w-full group-hover:bg-gigapink ${
-                props.colour === "black" ? "bg-white" : "bg-black"
-              }`}
-            ></div>
-            <div
-              className={`h-[5px] w-full group-hover:bg-gigapink ${
-                props.colour === "black" ? "bg-white" : "bg-black"
-              }`}
-            ></div>
+              className="flex flex-col justify-between first:gap-1 w-[35px] h-[30px] group cursor-pointer"
+              onClick={() => setIsOpen((isOpen) => !isOpen)}
+            >
+              <div
+                className={`h-[5px] w-full group-hover:bg-gigapink ${
+                  props.colour === "black" ? "bg-white" : "bg-black"
+                }`}
+              ></div>
+              <div
+                className={`h-[5px] w-full group-hover:bg-gigapink ${
+                  props.colour === "black" ? "bg-white" : "bg-black"
+                }`}
+              ></div>
+              <div
+                className={`h-[5px] w-full group-hover:bg-gigapink ${
+                  props.colour === "black" ? "bg-white" : "bg-black"
+                }`}
+              ></div>
+            </div>
           </div>
         </div>
       </div>

@@ -4,19 +4,16 @@ import styles from "../styles/Home.module.css";
 
 import { Navbar } from "../components/navbar";
 import { Footer } from "../components/footer";
-import { getPosts } from "../lib/api";
-import { HeroBlog } from "../components/blog/hero";
-import { BlogContainer } from "../components/blog/blogContainer";
+import { getAllProducts } from "../lib/api";
+import { HeroShop } from "../components/shop/hero";
+import { ShopContainer } from "../components/shop/shopContainer";
 import Link from "next/link";
-import { useEffect } from "react";
 import { ApolloProvider } from "@apollo/client";
 import client from "../lib/apollo";
 
-import { useQuery, gql } from "@apollo/client";
-
-export default function Blog() {
+export default function Shop({ products }) {
   return (
-
+    <ApolloProvider client={client}>
       <div className={styles.container}>
         <Head>
           <title>Gigawaffle | Web Design & Social Media Specialists</title>
@@ -27,20 +24,20 @@ export default function Blog() {
           <link rel="icon" href="/logo.svg" />
         </Head>
 
-        <Navbar colour="white" />
-        <HeroBlog />
-        <BlogContainer />
+        <Navbar colour="white" shop="show" />
+        <HeroShop />
+        <ShopContainer products={products} />
         <Footer />
       </div>
     </ApolloProvider>
   );
 }
 
-// export async function getServerSideProps(ctx) {
-//   let posts = await getPosts();
-//   return {
-//     props: {
-//       posts,
-//     },
-//   };
-// }
+export async function getServerSideProps(ctx) {
+  let products = await getAllProducts();
+  return {
+    props: {
+      products,
+    },
+  };
+}
