@@ -90,7 +90,10 @@ export default function Post({ post, posts, preview }) {
         <title>
           {post?.title} | Gigawaffle | Web Design & Social Media Specialists
         </title>
-        <meta name="description" content={post?.featuredImage.sourceUrl} />
+        <meta
+          name="description"
+          content="Waffle-free marketing and branding specialists. Take your business to that next level with eye-catching branding, a modern responsive website and engaging social media."
+        />
         <link rel="icon" href="/logo.svg" />
       </Head>
 
