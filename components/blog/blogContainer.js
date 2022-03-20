@@ -6,12 +6,9 @@ export const BlogContainer = (props) => {
     <div className="bg-gigapink px-4 py-20">
       <div className="max-w-[1250px] mx-auto grid grid-cols-5 gap-10">
         {props.posts.map((post, index) => (
-          <Link href={`/posts/${post.node.slug}`}>
+          <Link href={`/posts/${post.node.slug}`} key={index}>
             <a>
-              <div
-                key={index}
-                className="flex flex-col gap-2 border-2 border-white relative"
-              >
+              <div className="flex flex-col gap-2 border-2 border-white relative">
                 <img
                   src={post.node.featuredImage.node.sourceUrl}
                   className="w-full aspect-[4/5] object-cover"
