@@ -10,27 +10,35 @@ import { BlogPageContent } from "../../components/blog/blogPageContent";
 
 export default function Post({ post, posts, preview }) {
   const getUserAvatar = (description) => {
-    console.log(description);
-    const split = description.match(/[^\r\n]+/g);
-    console.log(split);
-    return split[0];
+    if (description !== undefined) {
+      let split = description.split(/\r?\n/);
+      return split[0];
+    } else {
+      return null;
+    }
   };
 
   const getUserRole = (description) => {
-    console.log(description);
-    const split = description.match(/[^\r\n]+/g);
-    console.log(split);
-    return split[1];
+    if (description !== undefined) {
+      let split = description.split(/\r?\n/);
+      return split[1];
+    } else {
+      return null;
+    }
   };
 
   const formattedDate = (date) => {
-    const halves = date.split("T");
-    const leftHalf = halves[0].split("-");
+    if (date !== undefined) {
+      const halves = date?.split("T");
+      const leftHalf = halves[0].split("-");
 
-    let month = getMonth(leftHalf[1]);
-    let day = nth(parseInt(leftHalf[2]));
+      let month = getMonth(leftHalf[1]);
+      let day = nth(parseInt(leftHalf[2]));
 
-    return leftHalf[2] + day + " " + month + " " + leftHalf[0];
+      return leftHalf[2] + day + " " + month + " " + leftHalf[0];
+    } else {
+      return null;
+    }
   };
 
   const nth = function (d) {
@@ -80,9 +88,9 @@ export default function Post({ post, posts, preview }) {
     <div className={styles.container}>
       <Head>
         <title>
-          {post.title} | Gigawaffle | Web Design & Social Media Specialists
+          {post?.title} | Gigawaffle | Web Design & Social Media Specialists
         </title>
-        <meta name="description" content={post.featuredImage.sourceUrl} />
+        <meta name="description" content={post?.featuredImage.sourceUrl} />
         <link rel="icon" href="/logo.svg" />
       </Head>
 
@@ -98,19 +106,19 @@ export default function Post({ post, posts, preview }) {
               </a>
             </Link>
             <h1 className="font-parkson lg2:text-9xl lg3:text-9xl lg:text-9xl sm:text-8xl text-7xl">
-              {post.title}
+              {post?.title}
             </h1>
             <div className="flex flex-row gap-2">
               <img
                 src={`/staff/${getUserAvatar(
-                  post.author.node.description
+                  post?.author.node.description
                 )}.png`}
                 className={`w-[40px] h-[40px] rounded-full bg-${
-                  getUserRole(post.author.node.description) === "Web"
+                  getUserRole(post?.author.node.description) === "Web"
                     ? "gigapink"
-                    : getUserRole(post.author.node.description) === "Brand"
+                    : getUserRole(post?.author.node.description) === "Brand"
                     ? "white border-2 border-gigapink"
-                    : getUserRole(post.author.node.description) === "Social"
+                    : getUserRole(post?.author.node.description) === "Social"
                     ? "gigablue"
                     : ""
                 }`}
@@ -118,27 +126,27 @@ export default function Post({ post, posts, preview }) {
               <div className="flex flex-col justify-center">
                 <div className="flex flex-row gap-2">
                   <h3 className="font-parkson text-3xl">
-                    {post.author.node.firstName} {post.author.node.lastName}
+                    {post?.author.node.firstName} {post?.author.node.lastName}
                   </h3>
                   <div className="flex flex-col justify-center">
                     <div className="bg-black w-[5px] h-[5px] rounded-full" />
                   </div>
                   <p className="font-parkson text-3xl">
-                    {formattedDate(post.date)}
+                    {formattedDate(post?.date)}
                   </p>
                 </div>
               </div>
             </div>
             <div className="bg-gigapink h-[30px] flex flex-col justify-center w-[120px] rounded-full">
               <p className="font-parkson text-xl text-center text-white w-[120px]">
-                {post.categories.nodes[0].name}
+                {post?.categories.nodes[0].name}
               </p>
             </div>
           </div>
           <div className="flex flex-col gap-8 py-20">
             <div
               className="font-poppins"
-              dangerouslySetInnerHTML={{ __html: post.content }}
+              dangerouslySetInnerHTML={{ __html: post?.content }}
             ></div>
           </div>
         </div>
