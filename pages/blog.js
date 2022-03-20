@@ -16,7 +16,7 @@ import { useQuery, gql } from "@apollo/client";
 
 export default function Blog() {
   return (
-
+    <ApolloProvider client={client}>
       <div className={styles.container}>
         <Head>
           <title>Gigawaffle | Web Design & Social Media Specialists</title>
