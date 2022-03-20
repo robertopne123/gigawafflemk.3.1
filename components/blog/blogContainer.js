@@ -4,7 +4,7 @@ import { getPosts } from "../../lib/api";
 export const BlogContainer = (props) => {
   return (
     <div className="bg-gigapink px-4 py-20">
-      <div className="max-w-[1250px] mx-auto grid grid-cols-5 gap-10">
+      <div className="max-w-[1250px] mx-auto grid xl:grid-cols-5 lg:grid-cols-4 md:grid-cols-3 xs:grid-cols-2 grid-cols-1 gap-10">
         {props.posts.map((post, index) => (
           <Link href={`/posts/${post.node.slug}`} key={index}>
             <a>
