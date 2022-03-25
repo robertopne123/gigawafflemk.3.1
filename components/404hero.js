@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export const HeroError = () => {
   return (
     <div className="w-full px-4">
@@ -8,11 +10,15 @@ export const HeroError = () => {
           DOESN&apos;T EXIST
         </h1>
         <div className="flex flex-row gap-4">
-          <div className="group w-[140px] h-[40px] hover:bg-gigapink hover:border-gigapink border-2 border-black flex flex-col justify-center">
-            <p className="font-poppins font-semibold text-center group-hover:text-white">
-              Go Home
-            </p>
-          </div>
+          <Link href="/">
+            <a>
+              <div className="group w-[140px] h-[40px] hover:bg-gigapink hover:border-gigapink border-2 border-black flex flex-col justify-center">
+                <p className="font-poppins font-semibold text-center group-hover:text-white">
+                  Go Home
+                </p>
+              </div>
+            </a>
+          </Link>
         </div>
       </div>
     </div>
