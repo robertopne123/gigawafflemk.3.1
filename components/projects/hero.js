@@ -118,6 +118,9 @@ export const HeroProjects = () => {
             onScroll={() => {
               checkInViewport();
             }}
+            onLoad={() => {
+              checkInViewport();
+            }}
           >
             <img
               src="/projects/PGB.jpg"
