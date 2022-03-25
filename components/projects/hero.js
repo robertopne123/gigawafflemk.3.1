@@ -138,6 +138,7 @@ export const HeroProjects = () => {
             <img
               src="/projects/unitecities.jpg"
               className="project md:w-[40%] md:h-auto h-[100%] self-end border-[5px] border-white"
+              id="unitecities"
             />
             <img
               src="/projects/delticbusiness.jpg"
