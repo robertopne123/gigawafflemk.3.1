@@ -10,7 +10,7 @@ const variants = {
     opacity: 1,
     y: 0,
   },
-  closed: { opacity: 1, y: "-100%" },
+  closed: { opacity: 0, y: "-100%" },
 };
 
 export const Navbar = (props) => {
