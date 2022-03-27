@@ -1,12 +1,22 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+export const AppContext = React.createContext([{}, () => {}]);
 
-var CartState = {
-  items: [],
-  cartCount: 0,
-  addToCart: function (product) {},
-  removeFromCart: function (productId) {},
+export const AppProvider = (props) => {
+  const [cart, setCart] = useState(null);
+
+  useEffect(() => {
+    // @TODO Will add option to show the cart with localStorage later.
+    if (typeof window !== "undefined") {
+      let cartData = localStorage.getItem("woo-next-cart");
+      cartData = null !== cartData ? JSON.parse(cartData) : "";
+      setCart(cartData);
+    } else {
+    }
+  }, []);
+
+  return (
+    <AppContext.Provider value={[cart, setCart]}>
+      {props.children}
+    </AppContext.Provider>
+  );
 };
-
-const CartContext = React.createContext(CartState);
-
-export default CartContext;

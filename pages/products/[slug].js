@@ -15,6 +15,8 @@ import Link from "next/link";
 import { BlogPageContent } from "../../components/blog/blogPageContent";
 import CartContext from "../../components/shop/context";
 import { useContext } from "react";
+import { addToCartBtn } from "../../components/cart";
+import CartBtn from "../../components/cartbtn";
 
 export default function Product({ product, products, preview }) {
   const ADDTOCART = gql`
@@ -31,10 +33,6 @@ export default function Product({ product, products, preview }) {
       console.log("complete", data);
     },
   });
-
-  const { items, addToCart, removeFromCart } = useContext(CartContext);
-
-  console.log(data);
 
   return (
     <ApolloProvider client={client}>
@@ -71,24 +69,7 @@ export default function Product({ product, products, preview }) {
                 </p>
               </div>
               <p className="font-poppins text-3xl">{product?.price}</p>
-              <div className="bg-gigapink py-2 w-[150px]">
-                <p
-                  className="font-parkson text-xl text-center text-white w-[150px] cursor-pointer"
-                  onClick={() =>
-                    function () {
-                      mutateFunction({
-                        variables: {
-                          productId: product?.databaseId,
-                          quantity: 1,
-                        },
-                      });
-                      addToCart(product);
-                    }
-                  }
-                >
-                  Add To Basket
-                </p>
-              </div>
+              <CartBtn product={product}></CartBtn>
             </div>
           </div>
         </div>
@@ -97,10 +78,6 @@ export default function Product({ product, products, preview }) {
       </div>
     </ApolloProvider>
   );
-}
-
-export async function addProductToCart(id, qty) {
-  await addToCart(id, qty);
 }
 
 export async function getStaticProps({ params, preview = false, previewData }) {
@@ -115,7 +92,6 @@ export async function getStaticProps({ params, preview = false, previewData }) {
 
 export async function getStaticPaths() {
   const allProducts = await getAllProductsWithSlug();
-  console.log(allProducts);
 
   return {
     paths: allProducts.edges.map(({ node }) => `/products/${node.slug}`) || [],
