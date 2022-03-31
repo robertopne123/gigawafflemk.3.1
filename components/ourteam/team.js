@@ -18,7 +18,7 @@ export const Team = () => {
             </p>
           </div>
         </div>
-        <div className="flex flex-col gap-2">
+        {/* <div className="flex flex-col gap-2">
           <div className="w-[150px] h-[150px] bg-gigapink rounded-full overflow-clip">
             <img
               src="/staff/2.png"
@@ -31,7 +31,7 @@ export const Team = () => {
             </p>
             <p className="font-parkson text-gigapink text-xl">Web Developer</p>
           </div>
-        </div>
+        </div> */}
         <div className="flex flex-col gap-2">
           <div className="w-[150px] h-[150px] bg-gigapink rounded-full overflow-clip">
             <img
@@ -74,7 +74,7 @@ export const Team = () => {
             <p className="font-parkson text-gigapink text-xl">App Developer</p>
           </div>
         </div>
-        <div className="flex flex-col gap-2">
+        {/* <div className="flex flex-col gap-2">
           <div className="w-[150px] h-[150px] bg-gigapink rounded-full overflow-clip">
             <img
               src="/staff/9.png"
@@ -89,7 +89,7 @@ export const Team = () => {
               Quality Assurance Tester
             </p>
           </div>
-        </div>
+        </div> */}
         <div className="flex flex-col gap-2">
           <div className="w-[150px] h-[150px] bg-gigablue rounded-full overflow-clip">
             <img
@@ -170,7 +170,7 @@ export const Team = () => {
             </p>
           </div>
         </div>
-        <div className="flex flex-col gap-2">
+        {/* <div className="flex flex-col gap-2">
           <div className="w-[150px] h-[150px] bg-white border-4 border-gigapink rounded-full overflow-clip">
             <img
               src="/staff/10.png"
@@ -185,7 +185,7 @@ export const Team = () => {
               Trainee Designer
             </p>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );
