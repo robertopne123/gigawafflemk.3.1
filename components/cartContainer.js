@@ -10,7 +10,7 @@ import { useMutation } from "@apollo/client";
 import Link from "next/link";
 import CartItem from "./cartItem";
 
-const CartContainer = () => {
+// const CartContainer = () => {
 //   const [cart, setCart] = useContext(AppContext);
 //   const [requestError, setRequestError] = useState(null);
 
