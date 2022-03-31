@@ -15,7 +15,6 @@ import {
   handleBillingDifferentThanShipping,
   handleCreateAccount,
   handleStripeCheckout,
-  setStatesForCountry,
 } from "./utils/checkout";
 import CheckboxField from "./fields/checkoutField";
 import CLEAR_CART_MUTATION from "./mutations/clear-cart";
