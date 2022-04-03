@@ -1,6 +1,6 @@
-import { useContext } from "react/cjs/react.development";
+import { useContext } from "react";
 import { AppContext } from "./shop/context";
-import { useState } from "react/cjs/react.development";
+import { useState } from "react";
 import { useQuery } from "@apollo/client";
 import GET_CART from "./queries/get-cart";
 import UPDATE_CART from "./mutations/add-to-cart";
