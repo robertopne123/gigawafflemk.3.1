@@ -7,6 +7,9 @@ import { Footer } from "..//../components/footer";
 import { getSinglePost, getAllPostsWithSlug } from "../../lib/api";
 import Link from "next/link";
 import { BlogPageContent } from "../../components/blog/blogPageContent";
+import { useRouter } from "next/router";
+import { ApolloProvider, gql, useMutation, useQuery } from "@apollo/client";
+import client from "../../lib/apollo";
 
 export default function Post({ post, posts, preview }) {
   const getUserAvatar = (description) => {
@@ -84,11 +87,62 @@ export default function Post({ post, posts, preview }) {
     }
   };
 
+  const getSlug = () => {
+    let parts = asPath.split("/");
+    console.log(parts);
+    let length = parts.length;
+
+    return parts[length - 1];
+  };
+
+  const { asPath, pathname } = useRouter();
+
+  const GETPOST = gql`
+    query getSinglePost($id: ID!) {
+      post(id: $id, idType: SLUG) {
+        id
+        author {
+          node {
+            firstName
+            lastName
+            description
+          }
+        }
+        categories {
+          nodes {
+            name
+          }
+        }
+        date
+        content
+        featuredImage {
+          node {
+            sourceUrl
+          }
+        }
+        title
+        slug
+        uri
+      }
+    }
+  `;
+
+  const { data, loading, error } = useQuery(GETPOST, {
+    client: client,
+    onCompleted: (data) => {
+      console.log("complete", data);
+    },
+    variables: {
+      id: getSlug(),
+    },
+  });
+
   return (
     <div className={styles.container}>
       <Head>
         <title>
-          {post?.title} | Gigawaffle | Web Design & Social Media Specialists
+          {data?.post?.title} | Gigawaffle | Web Design & Social Media
+          Specialists
         </title>
         <meta
           name="description"
@@ -109,19 +163,21 @@ export default function Post({ post, posts, preview }) {
               </a>
             </Link>
             <h1 className="font-parkson lg2:text-9xl lg3:text-9xl lg:text-9xl sm:text-8xl text-7xl">
-              {post?.title}
+              {data?.post?.title}
             </h1>
             <div className="flex flex-row gap-2">
               <img
                 src={`/staff/${getUserAvatar(
-                  post?.author.node.description
+                  data?.post?.author.node.description
                 )}.png`}
                 className={`w-[40px] h-[40px] rounded-full bg-${
-                  getUserRole(post?.author.node.description) === "Web"
+                  getUserRole(data?.post?.author.node.description) === "Web"
                     ? "gigapink"
-                    : getUserRole(post?.author.node.description) === "Brand"
+                    : getUserRole(data?.post?.author.node.description) ===
+                      "Brand"
                     ? "white border-2 border-gigapink"
-                    : getUserRole(post?.author.node.description) === "Social"
+                    : getUserRole(data?.post?.author.node.description) ===
+                      "Social"
                     ? "gigablue"
                     : ""
                 }`}
@@ -129,27 +185,28 @@ export default function Post({ post, posts, preview }) {
               <div className="flex flex-col justify-center">
                 <div className="flex flex-row gap-2">
                   <h3 className="font-parkson text-3xl">
-                    {post?.author.node.firstName} {post?.author.node.lastName}
+                    {data?.post?.author.node.firstName}{" "}
+                    {data?.post?.author.node.lastName}
                   </h3>
                   <div className="flex flex-col justify-center">
                     <div className="bg-black w-[5px] h-[5px] rounded-full" />
                   </div>
                   <p className="font-parkson text-3xl">
-                    {formattedDate(post?.date)}
+                    {formattedDate(data?.post?.date)}
                   </p>
                 </div>
               </div>
             </div>
             <div className="bg-gigapink h-[30px] flex flex-col justify-center w-[120px] rounded-full">
               <p className="font-parkson text-xl text-center text-white w-[120px]">
-                {post?.categories.nodes[0].name}
+                {data?.post?.categories.nodes[0].name}
               </p>
             </div>
           </div>
           <div className="flex flex-col gap-8 py-20">
             <div
               className="font-poppins"
-              dangerouslySetInnerHTML={{ __html: post?.content }}
+              dangerouslySetInnerHTML={{ __html: data?.post?.content }}
             ></div>
           </div>
         </div>
@@ -160,21 +217,21 @@ export default function Post({ post, posts, preview }) {
   );
 }
 
-export async function getStaticProps({ params, preview = false, previewData }) {
-  const data = await getSinglePost(params);
+// export async function getStaticProps({ params, preview = false, previewData }) {
+//   const data = await getSinglePost(params);
 
-  return {
-    props: {
-      post: data,
-    },
-  };
-}
+//   return {
+//     props: {
+//       post: data,
+//     },
+//   };
+// }
 
-export async function getStaticPaths() {
-  const allPosts = await getAllPostsWithSlug();
+// export async function getStaticPaths() {
+//   const allPosts = await getAllPostsWithSlug();
 
-  return {
-    paths: allPosts.edges.map(({ node }) => `/posts/${node.slug}`) || [],
-    fallback: true,
-  };
-}
+//   return {
+//     paths: allPosts.edges.map(({ node }) => `/posts/${node.slug}`) || [],
+//     fallback: true,
+//   };
+// }
