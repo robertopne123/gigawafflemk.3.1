@@ -34,7 +34,7 @@ export const OrderThanks = (props) => {
         </div>
         <div className="flex flex-col gap-8 justify-center">
           <p className="font-parkson text-2xl">Order No: {props.ordernumber}</p>
-          {props.cart.map((item, index) => (
+          {props.cart?.map((item, index) => (
             <div
               className="flex flex-row justify-between bg-black px-3 py-1 border-2 border-white"
               key={index}
