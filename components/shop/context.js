@@ -10,7 +10,6 @@ export const AppProvider = (props) => {
       let cartData = localStorage.getItem("woo-next-cart");
       cartData = null !== cartData ? JSON.parse(cartData) : "";
       setCart(cartData);
-    } else {
     }
   }, []);
 

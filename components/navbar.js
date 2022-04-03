@@ -32,8 +32,19 @@ export const Navbar = (props) => {
   const [isCartOpen, setCartOpen] = useState(false);
 
   const [cart] = useContext(AppContext);
-  const productsCount =
+
+  console.log(cart);
+
+  let productsCount =
     null !== cart && Object.keys(cart).length ? cart.totalProductsCount : "0";
+
+  // if (cart === undefined) {
+  //   productsCount = 0;
+  // } else if (cart === "") {
+  //   productsCount = 0;
+  // } else {
+  //   productsCount = cart.total;
+  // }
 
   return (
     <ApolloProvider client={client}>

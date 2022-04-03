@@ -9,7 +9,7 @@ import {
   getAllProductsWithSlug,
   addToCart,
 } from "../../lib/api";
-import { ApolloProvider, gql, useMutation } from "@apollo/client";
+import { ApolloProvider, gql, useMutation, useQuery } from "@apollo/client";
 import client from "../../lib/apollo";
 import Link from "next/link";
 import { BlogPageContent } from "../../components/blog/blogPageContent";
@@ -17,8 +17,53 @@ import CartContext from "../../components/shop/context";
 import { useContext } from "react";
 import { addToCartBtn } from "../../components/cart";
 import CartBtn from "../../components/cartbtn";
+import { useRouter } from "next/router";
 
 export default function Product({ product, products, preview }) {
+  const getSlug = () => {
+    let parts = asPath.split("/");
+    console.log(parts);
+    let length = parts.length;
+
+    return parts[length - 1];
+  };
+
+  const { asPath, pathname } = useRouter();
+
+  const GETPRODUCT = gql`
+    query getSingleProduct($id: ID!) {
+      product(id: $id, idType: SLUG) {
+        id
+        productCategories {
+          nodes {
+            name
+          }
+        }
+        image {
+          sourceUrl
+        }
+        name
+        slug
+        ... on SimpleProduct {
+          id
+          name
+          price
+        }
+        databaseId
+      }
+    }
+  `;
+
+  const { data, loading, error } = useQuery(GETPRODUCT, {
+    client: client,
+    onCompleted: (data) => {
+      console.log("complete", data);
+    },
+    variables: {
+      id: getSlug(),
+    },
+  });
+
   const ADDTOCART = gql`
     mutation AddToCart($productId: Int!, $quantity: Int!) {
       addToCart(input: { productId: $productId, quantity: $quantity }) {
@@ -27,10 +72,10 @@ export default function Product({ product, products, preview }) {
     }
   `;
 
-  const [mutateFunction, { data, loading, error }] = useMutation(ADDTOCART, {
+  const [mutateFunction, { mData, mLoading, mError }] = useMutation(ADDTOCART, {
     client: client,
-    onCompleted: (data) => {
-      console.log("complete", data);
+    onCompleted: (mData) => {
+      console.log("complete", mData);
     },
   });
 
@@ -39,7 +84,8 @@ export default function Product({ product, products, preview }) {
       <div className={styles.container}>
         <Head>
           <title>
-            {product?.name} | Gigawaffle | Web Design & Social Media Specialists
+            {data?.product?.name} | Gigawaffle | Web Design & Social Media
+            Specialists
           </title>
           <meta
             name="description"
@@ -54,22 +100,22 @@ export default function Product({ product, products, preview }) {
             <div className="flex flex-row justify-end">
               <div className="flex flex-col ml-auto">
                 <img
-                  src={product?.image.sourceUrl}
+                  src={data?.product?.image.sourceUrl}
                   className="w-2/3 aspect-square object-cover ml-auto"
                 ></img>
               </div>
             </div>
             <div className="flex flex-col gap-2">
               <h1 className="font-parkson lg2:text-8xl lg3:text-8xl lg:text-8xl sm:text-7xl text-6xl">
-                {product?.name}
+                {data?.product?.name}
               </h1>
               <div className="bg-gigapink h-[30px] flex flex-col justify-center w-[120px] rounded-full mb-4">
                 <p className="font-parkson text-xl text-center text-white w-[120px]">
-                  {product?.productCategories.nodes[0].name}
+                  {data?.product?.productCategories.nodes[0].name}
                 </p>
               </div>
-              <p className="font-poppins text-3xl">{product?.price}</p>
-              <CartBtn product={product}></CartBtn>
+              <p className="font-poppins text-3xl">{data?.product?.price}</p>
+              <CartBtn product={data?.product}></CartBtn>
             </div>
           </div>
         </div>
@@ -80,21 +126,21 @@ export default function Product({ product, products, preview }) {
   );
 }
 
-export async function getStaticProps({ params, preview = false, previewData }) {
-  const data = await getSingleProduct(params);
+// export async function getStaticProps({ params, preview = false, previewData }) {
+//   const data = await getSingleProduct(params);
 
-  return {
-    props: {
-      product: data,
-    },
-  };
-}
+//   return {
+//     props: {
+//       product: data,
+//     },
+//   };
+// }
 
-export async function getStaticPaths() {
-  const allProducts = await getAllProductsWithSlug();
+// export async function getStaticPaths() {
+//   const allProducts = await getAllProductsWithSlug();
 
-  return {
-    paths: allProducts.edges.map(({ node }) => `/products/${node.slug}`) || [],
-    fallback: true,
-  };
-}
+//   return {
+//     paths: allProducts.edges.map(({ node }) => `/products/${node.slug}`) || [],
+//     fallback: true,
+//   };
+// }

@@ -15,7 +15,7 @@ const CartBtn = (props) => {
 
   const productQryInput = {
     clientMutationId: v4(), // Generate a unique id.
-    productId: product.databaseId,
+    productId: product?.databaseId,
   };
 
   const [cart, setCart] = useContext(AppContext);
@@ -69,7 +69,7 @@ const CartBtn = (props) => {
   return (
     <div>
       {/*	Check if its an external product then put its external buy link */}
-      {"ExternalProduct" === product.__typename ? (
+      {"ExternalProduct" === product?.__typename ? (
         <a
           href={product?.externalUrl ?? "/"}
           target="_blank"

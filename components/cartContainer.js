@@ -23,7 +23,7 @@ const CartContainer = () => {
       localStorage.setItem("woo-next-cart", JSON.stringify(updatedCart));
 
       // Update cart data in React Context.
-      setCart(updatedCart);
+      //setCart(updatedCart);
     },
   });
 
