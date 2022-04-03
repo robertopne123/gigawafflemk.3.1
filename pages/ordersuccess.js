@@ -45,7 +45,7 @@ export default function OrderSuccess() {
 
       return cart;
     } else {
-      return "";
+      return [];
     }
   }
 
