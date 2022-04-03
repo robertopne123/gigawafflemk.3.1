@@ -33,11 +33,11 @@ export default function Shop({ products }) {
   );
 }
 
-export async function getServerSideProps(ctx) {
-  let products = await getAllProducts();
-  return {
-    props: {
-      products,
-    },
-  };
-}
+// export async function getServerSideProps(ctx) {
+//   let products = await getAllProducts();
+//   return {
+//     props: {
+//       products,
+//     },
+//   };
+// }

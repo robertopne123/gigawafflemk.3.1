@@ -86,13 +86,13 @@ export const Navbar = (props) => {
               </div>
             </div>
           </div>
-          <motion.nav
+          <motion.div
             className="bg-gray-200 absolute right-0 top-[68px]"
             animate={isCartOpen ? "open" : "closed"}
             variants={variantsCart}
           >
             <CartContainer />
-          </motion.nav>
+          </motion.div>
         </div>
         <div className="h-screen w-screen absolute fixed top-0 hidden">
           <div
