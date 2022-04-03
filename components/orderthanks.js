@@ -34,18 +34,22 @@ export const OrderThanks = (props) => {
         </div>
         <div className="flex flex-col gap-8 justify-center">
           <p className="font-parkson text-2xl">Order No: {props.ordernumber}</p>
-          {props.cart?.map((item, index) => (
-            <div
-              className="flex flex-row justify-between bg-black px-3 py-1 border-2 border-white"
-              key={index}
-            >
-              {item.price.length === 2 ? (item.price += ".00") : ""}
-              <p className="font-parkson text-xl text-white">
-                {item.qty}x <span className="text-2xl">{item.name}</span>
-              </p>
-              <p className="font-parkson text-2xl text-white">£{item.price}</p>
-            </div>
-          ))}
+          {props.cart !== undefined
+            ? props.cart?.map((item, index) => (
+                <div
+                  className="flex flex-row justify-between bg-black px-3 py-1 border-2 border-white"
+                  key={index}
+                >
+                  {item.price.length === 2 ? (item.price += ".00") : ""}
+                  <p className="font-parkson text-xl text-white">
+                    {item.qty}x <span className="text-2xl">{item.name}</span>
+                  </p>
+                  <p className="font-parkson text-2xl text-white">
+                    £{item.price}
+                  </p>
+                </div>
+              ))
+            : ""}
           <p className="font-parkson text-2xl">
             Please make payment with the following details:
           </p>
