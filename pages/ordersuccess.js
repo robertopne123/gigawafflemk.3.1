@@ -22,27 +22,31 @@ export default function OrderSuccess() {
   } = router;
 
   function getFormattedCart() {
-    let orderRecordString = orderData[1];
+    if (orderData !== undefined) {
+      let orderRecordString = orderData[1];
 
-    let orderRecords = orderRecordString.split(":");
+      let orderRecords = orderRecordString.split(":");
 
-    let cart = [];
+      let cart = [];
 
-    for (let i = 0; i < orderRecords.length - 1; i += 2) {
-      let cartId = orderRecords[i];
-      let cartItems = orderRecords[i + 1]?.split(",");
+      for (let i = 0; i < orderRecords.length - 1; i += 2) {
+        let cartId = orderRecords[i];
+        let cartItems = orderRecords[i + 1]?.split(",");
 
-      let cartRecord = {
-        id: cartId,
-        name: cartItems[0],
-        price: cartItems[1],
-        qty: cartItems[2],
-      };
+        let cartRecord = {
+          id: cartId,
+          name: cartItems[0],
+          price: cartItems[1],
+          qty: cartItems[2],
+        };
 
-      cart.push(cartRecord);
+        cart.push(cartRecord);
+      }
+
+      return cart;
+    } else {
+      return "";
     }
-
-    return cart;
   }
 
   return (
@@ -60,7 +64,10 @@ export default function OrderSuccess() {
       </Head>
 
       <Navbar colour="white" />
-      <OrderThanks ordernumber={orderData[0]} cart={getFormattedCart()} />
+      <OrderThanks
+        ordernumber={orderData === undefined ? "" : orderData[0]}
+        cart={getFormattedCart()}
+      />
     </div>
   );
 }
