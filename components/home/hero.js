@@ -1,6 +1,14 @@
 import Link from "next/link";
 
 export const HeroHome = () => {
+  const enquireNow = () => {
+    ga.event({
+      action: "jumpToEnquiry",
+      params: {
+        location: "Home",
+      },
+    });
+  };
   return (
     <div className="w-full px-4">
       <div className="max-w-[1250px] mx-auto h-[calc(100vh-82px)] flex flex-col gap-8 justify-center">
@@ -20,7 +28,7 @@ export const HeroHome = () => {
             </a>
           </Link>
           <Link href="#enquire">
-            <a>
+            <a onClick={() => enquireNow()}>
               <div className="group w-[140px] h-[40px] bg-gigapink hover:bg-transparent hover:border-black border-2 border-gigapink flex flex-col justify-center">
                 <p className="text-white font-poppins font-semibold text-center group-hover:text-black">
                   Enquire Now

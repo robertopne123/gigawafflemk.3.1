@@ -93,15 +93,6 @@ const CartBtn = (props) => {
           {addToCartLoading ? "Adding to cart..." : "Add to cart"}
         </button>
       )}
-      {showViewCart ? (
-        <Link href="/cart">
-          <button className="px-3 py-1 rounded-sm text-sm border-solid border border-current inline-block hover:bg-purple-600 hover:text-white hover:border-purple-600">
-            View Cart
-          </button>
-        </Link>
-      ) : (
-        ""
-      )}
     </div>
   );
 };

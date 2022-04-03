@@ -69,7 +69,7 @@ export const Navbar = (props) => {
               className={`flex-row ${props.shop == "show" ? "flex" : "hidden"}`}
               onClick={() => setCartOpen((isCartOpen) => !isCartOpen)}
             >
-              <img src="/shop.svg" className="w-[40px]" />
+              <img src="/shop.svg" className="w-[40px] cursor-pointer" />
               <p className="font-poppins bg-black h-[15px] w-[15px] text-center rounded-full translate-y-1 -translate-x-1 text-xs text-white">
                 {productsCount}
               </p>

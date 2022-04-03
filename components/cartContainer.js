@@ -103,15 +103,15 @@ const CartContainer = () => {
   };
 
   return (
-    <div className="cart product-cart-container container mx-auto my-4 px-4 xl:px-0">
+    <div className="cart product-cart-container mx-auto my-4 px-4 xl:px-0">
       {cart ? (
-        <div className="woo-next-cart-wrapper container">
+        <div className="woo-next-cart-wrapper">
           <div className="cart-header flex flex-row gap-4 justify-between border-b-2 border-gray-400">
             <h1 className="text-2xl uppercase font-poppins font-bold px-4 pb-4">
               Cart
             </h1>
             {/*Clear entire cart*/}
-            <div className="clear-cart text-right w-[200px] px-4">
+            <div className="clear-cart text-right sm:w-[200px] px-4">
               <button
                 className="px-4 py-1 bg-gigapink text-white uppercase font-poppins w-auto"
                 onClick={(event) => handleClearCart(event)}
@@ -124,7 +124,7 @@ const CartContainer = () => {
               {updateCartProcessing ? <p>Updating...</p> : null}
             </div>
           </div>
-          <div className="grid grid-cols-1 xl:grid-cols-1 gap-4 xl:gap-4 p-4">
+          <div className="grid grid-cols-1 xl:grid-cols-1 gap-4 xl:gap-4 py-4">
             <div className="cart-products col-span-1 mb-5">
               <div className="flex flex-col gap-4">
                 {cart.products.length &&

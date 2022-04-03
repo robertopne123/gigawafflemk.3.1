@@ -11,30 +11,47 @@ import { ProjectViewer } from "../components/home/projects";
 import { Contact } from "../components/contact";
 import { Footer } from "../components/footer";
 import { Loading } from "../components/loading";
-import { useEffect } from "react";
+import { Thanks } from "../components/thanks";
+import { OrderThanks } from "../components/orderthanks";
 import { useRouter } from "next/router";
 
-import * as ga from "../lib/ga";
-
-export default function Home() {
+export default function OrderSuccess() {
   const router = useRouter();
+  const {
+    query: { orderData },
+  } = router;
 
-  useEffect(() => {
-    const handleRouteChange = (url) => {
-      ga.pageview(url);
-    };
+  function getFormattedCart() {
+    let orderRecordString = orderData[1];
 
-    router.events.on("routeChangeComplete", handleRouteChange);
+    let orderRecords = orderRecordString.split(":");
 
-    return () => {
-      router.events.off("routeChangeComplete", handleRouteChange);
-    };
-  }, [router.events]);
+    let cart = [];
+
+    for (let i = 0; i < orderRecords.length - 1; i += 2) {
+      let cartId = orderRecords[i];
+      let cartItems = orderRecords[i + 1]?.split(",");
+
+      let cartRecord = {
+        id: cartId,
+        name: cartItems[0],
+        price: cartItems[1],
+        qty: cartItems[2],
+      };
+
+      cart.push(cartRecord);
+    }
+
+    return cart;
+  }
 
   return (
     <div className={styles.container}>
       <Head>
-        <title>Gigawaffle | Web Design & Social Media Specialists</title>
+        <title>
+          Thanks for your purchase | Gigawaffle | Web Dsesign & Social Media
+          Specialists
+        </title>
         <meta
           name="description"
           content="Waffle-free marketing and branding specialists. Take your business to that next level with eye-catching branding, a modern responsive website and engaging social media."
@@ -42,16 +59,8 @@ export default function Home() {
         <link rel="icon" href="/logo.svg" />
       </Head>
 
-      <Loading />
-
       <Navbar colour="white" />
-      <HeroHome />
-      <HomeIntro />
-      <HomeServices />
-      <HomeStats />
-      <ProjectViewer />
-      <Contact />
-      <Footer />
+      <OrderThanks ordernumber={orderData[0]} cart={getFormattedCart()} />
     </div>
   );
 }

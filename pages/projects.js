@@ -11,8 +11,26 @@ import { ProjectViewer } from "../components/home/projects";
 import { Contact } from "../components/home/contact";
 import { Footer } from "../components/footer";
 import { HeroProjects } from "../components/projects/hero";
+import { useEffect } from "react";
+import { useRouter } from "next/router";
+
+import * as ga from "../lib/ga";
 
 export default function Projects() {
+  const router = useRouter();
+
+  useEffect(() => {
+    const handleRouteChange = (url) => {
+      ga.pageview(url);
+    };
+
+    router.events.on("routeChangeComplete", handleRouteChange);
+
+    return () => {
+      router.events.off("routeChangeComplete", handleRouteChange);
+    };
+  }, [router.events]);
+
   return (
     <div className={styles.container}>
       <Head>

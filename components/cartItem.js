@@ -51,7 +51,7 @@ const CartItem = ({
 
   return (
     <div
-      className="woo-next-cart-item bg-white flex flex-row justify-between gap-2"
+      className="woo-next-cart-item bg-white flex flex-row justify-between sm:gap-2"
       key={item.productId}
     >
       <div className="woo-next-cart-element">
@@ -63,14 +63,14 @@ const CartItem = ({
           className="min-w-[60px] aspect-square object-cover"
         />
       </div>
-      <div className="flex flex-col justify-center p-1 min-w-[120px]">
-        <p className="woo-next-cart-element font-parkson text-xl">
+      <div className="flex flex-col justify-center p-1 w-[120px]">
+        <p className="woo-next-cart-element font-parkson sm:text-xl text-lg">
           {item.name}
         </p>
         {/* Qty Input */}
       </div>
       <div className="flex flex-col justify-center p-1">
-        <p className="woo-next-cart-element font-poppins font-bold text-sm">
+        <p className="woo-next-cart-element font-poppins font-bold sm:text-sm text-xs">
           £{"string" !== typeof item.price ? item.price.toFixed(2) : item.price}
         </p>
       </div>
@@ -90,7 +90,7 @@ const CartItem = ({
         </div>
       </div>
       <div className="flex flex-col justify-center p-1">
-        <p className="woo-next-cart-element font-poppins font-bold text-sm">
+        <p className="woo-next-cart-element font-poppins font-bold sm:text-sm text-xs">
           {"string" !== typeof item.totalPrice
             ? item.totalPrice.toFixed(2)
             : item.totalPrice}

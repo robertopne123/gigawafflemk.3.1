@@ -13,8 +13,26 @@ import { Contact } from "../components/home/contact";
 import { Footer } from "../components/footer";
 import { TeamHero } from "../components/ourteam/teamhero";
 import { Team } from "../components/ourteam/team";
+import { useEffect } from "react";
+import { useRouter } from "next/router";
+
+import * as ga from "../lib/ga";
 
 export default function OurTeam() {
+  const router = useRouter();
+
+  useEffect(() => {
+    const handleRouteChange = (url) => {
+      ga.pageview(url);
+    };
+
+    router.events.on("routeChangeComplete", handleRouteChange);
+
+    return () => {
+      router.events.off("routeChangeComplete", handleRouteChange);
+    };
+  }, [router.events]);
+
   return (
     <div className={styles.container}>
       <Head>

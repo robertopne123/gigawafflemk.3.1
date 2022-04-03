@@ -104,6 +104,10 @@ const CheckoutForm = ({ countriesData }) => {
         if (error) {
           setRequestError(error?.graphQLErrors?.[0]?.message ?? "");
         }
+        console.log(error.message);
+      },
+      onCompleted: (checkoutResponse) => {
+        console.log("complete", checkoutResponse);
       },
     });
 
@@ -120,8 +124,6 @@ const CheckoutForm = ({ countriesData }) => {
    */
   const handleFormSubmit = async (event) => {
     event.preventDefault();
-
-    console.log(event);
 
     /**
      * Validate Billing and Shipping Details
@@ -143,8 +145,6 @@ const CheckoutForm = ({ countriesData }) => {
     );
 
     if (!shippingValidationResult.isValid || !billingValidationResult.isValid) {
-      console.log(shippingValidationResult);
-      console.log(billingValidationResult);
       setInput({
         ...input,
         billing: { ...input.billing, errors: billingValidationResult.errors },
@@ -246,7 +246,7 @@ const CheckoutForm = ({ countriesData }) => {
       {cart ? (
         <form
           onSubmit={handleFormSubmit}
-          className="woo-next-checkout-form max-w-[1250px] mx-auto"
+          className="woo-next-checkout-form max-w-[1250px] mx-auto p-4"
         >
           <div className="grid grid-cols-1 md:grid-cols-2 gap-20">
             <div>
@@ -319,13 +319,15 @@ const CheckoutForm = ({ countriesData }) => {
 
               {/* Checkout Loading*/}
               {isOrderProcessing && <p>Processing Order...</p>}
-              {requestError && <OrderSuccess response={checkoutResponse} />}
+              {requestError && (
+                <OrderSuccess response={checkoutResponse} cart={cart} />
+              )}
             </div>
           </div>
         </form>
       ) : null}
       {/*	Show message if Order Success*/}
-      <OrderSuccess response={checkoutResponse} />
+      <OrderSuccess response={checkoutResponse} cart={cart} />
     </>
   );
 };
