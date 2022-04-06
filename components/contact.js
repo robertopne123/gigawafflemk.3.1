@@ -15,6 +15,17 @@ export const Contact = () => {
             proposal with you, clarify our reasoning, and forecast your
             company&apos;s growth potential.
           </p>
+          <p className="font-parkson text-white text-3xl">
+            CONTACT US THROUGH WHATSAPP
+          </p>
+          <p className="font-poppins text-white text-sm">
+            You can now message us through WhatsApp! Get directly in touch with
+            the team here at Gigawaffle, where we can provide advice and answer
+            any queries or enquiries you send through. <br />
+            <br />
+            To get in touch with us, please click the WhatsApp icon in the
+            bottom right.
+          </p>
         </div>
         <div className="flex flex-col gap-4">
           <form

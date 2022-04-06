@@ -88,3 +88,32 @@ a {
     transform: translatey(calc(var(--axis-y) * -1));
   }
 }
+
+._2W95M {
+  background: rgb(225, 73, 133) !important;
+}
+
+._1bpcM {
+  color: rgb(225, 73, 133) !important;
+}
+
+._2rVjT {
+  background: rgb(225, 73, 133) !important;
+  padding: 10px;
+}
+
+._10MlI {
+  color: rgb(225, 73, 133) !important;
+}
+
+._3YWHv {
+  background: rgb(255, 255, 255) !important;
+}
+
+._nYEjV {
+  background-color: rgb(230, 230, 230) !important;
+}
+
+._eRm_Y {
+  border-color: transparent #e6e6e6 transparent transparent !important;
+}
