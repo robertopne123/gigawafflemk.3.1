@@ -15,6 +15,7 @@ import { useEffect } from "react";
 import { useRouter } from "next/router";
 
 import * as ga from "../lib/ga";
+import ReactPixel from "react-facebook-pixel";
 
 export default function Projects() {
   const router = useRouter();
@@ -22,6 +23,8 @@ export default function Projects() {
   useEffect(() => {
     const handleRouteChange = (url) => {
       ga.pageview(url);
+      ReactPixel.init("534470887542377");
+      ReactPixel.pageView();
     };
 
     router.events.on("routeChangeComplete", handleRouteChange);
