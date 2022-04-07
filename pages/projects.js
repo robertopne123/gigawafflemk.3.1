@@ -15,7 +15,7 @@ import { useEffect } from "react";
 import { useRouter } from "next/router";
 
 import * as ga from "../lib/ga";
-import * as fb from "../lib/fb";
+import FacebookPixel from "../lib/fb";
 
 export default function Projects() {
   const router = useRouter();
