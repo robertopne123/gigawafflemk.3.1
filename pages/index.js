@@ -15,6 +15,7 @@ import { useEffect } from "react";
 import { useRouter } from "next/router";
 
 import * as ga from "../lib/ga";
+import FacebookPixel from "../lib/fb";
 
 export default function Home() {
   const router = useRouter();
@@ -41,6 +42,8 @@ export default function Home() {
         />
         <link rel="icon" href="/logo.svg" />
       </Head>
+
+      <FacebookPixel />
 
       <Loading />
 
