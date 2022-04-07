@@ -15,7 +15,6 @@ import Link from "next/link";
 
 import * as ga from "../lib/ga";
 import { useState } from "react";
-import ReactPixel from "react-facebook-pixel";
 
 export default function Links() {
   const linkWeb = () => {
@@ -25,8 +24,6 @@ export default function Links() {
         location: "Web",
       },
     });
-    ReactPixel.init("534470887542377");
-    ReactPixel.trackCustom("linksPageClick", "Web");
   };
   const linkIG = () => {
     ga.event({
@@ -35,8 +32,6 @@ export default function Links() {
         location: "IG",
       },
     });
-    ReactPixel.init("534470887542377");
-    ReactPixel.trackCustom("linksPageClick", "IG");
   };
   const linkTT = () => {
     ga.event({
@@ -45,8 +40,6 @@ export default function Links() {
         location: "TT",
       },
     });
-    ReactPixel.init("534470887542377");
-    ReactPixel.trackCustom("linksPageClick", "TT");
   };
   const linkLI = () => {
     ga.event({
@@ -55,8 +48,6 @@ export default function Links() {
         location: "LI",
       },
     });
-    ReactPixel.init("534470887542377");
-    ReactPixel.trackCustom("linksPageClick", "LI");
   };
   const linkFB = () => {
     ga.event({
@@ -65,8 +56,6 @@ export default function Links() {
         location: "FB",
       },
     });
-    ReactPixel.init("534470887542377");
-    ReactPixel.trackCustom("linksPageClick", "FB");
   };
 
   return (
