@@ -17,6 +17,7 @@ import { useEffect } from "react";
 import { useRouter } from "next/router";
 
 import * as ga from "../lib/ga";
+import * as fb from "../lib/fb";
 
 export default function OurTeam() {
   const router = useRouter();
@@ -45,6 +46,8 @@ export default function OurTeam() {
         />
         <link rel="icon" href="/logo.svg" />
       </Head>
+
+      <FacebookPixel />
 
       <Navbar colour="white" />
       <TeamHero />

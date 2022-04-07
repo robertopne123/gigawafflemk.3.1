@@ -15,6 +15,7 @@ import { useEffect } from "react";
 import { useRouter } from "next/router";
 
 import * as ga from "../lib/ga";
+import * as fb from "../lib/fb";
 
 export default function Services() {
   const router = useRouter();
@@ -43,6 +44,8 @@ export default function Services() {
         />
         <link rel="icon" href="/logo.svg" />
       </Head>
+
+      <FacebookPixel />
 
       <Navbar colour="white" />
       <HeroServices />
