@@ -16,15 +16,16 @@ function MyApp({ Component, pageProps }) {
         className="z-50"
         style={{
           background: "#4EDDF0",
-          fontFamily: "Poppins",
-          fontSize: "14px",
+          fontFamily: "Parkson-Black",
+          fontSize: "24px",
           color: "#000000",
+          zIndex: "50",
         }}
         buttonStyle={{
           background: "#E14985",
           color: "#ffffff",
           fontFamily: "Parkson-Black",
-          fontSize: "18px",
+          fontSize: "20px",
         }}
         onAccept={(acceptedByScrolling) => {
           if (acceptedByScrolling) {
