@@ -32,7 +32,7 @@ export const Loading = (props) => {
       y: 0,
       transition: {
         duration: 2,
-        delay: 2.5,
+        delay: 6,
       },
       transitionEnd: { display: "none" },
     },
@@ -40,13 +40,28 @@ export const Loading = (props) => {
 
   return (
     <motion.div
-      className="absolute left-0 top-0 w-full h-screen bg-white z-[100]"
+      className="absolute left-0 top-0 w-screen h-screen bg-black z-[100]"
       initial="open"
       animate="closed"
       variants={variants}
     >
-      <div className="h-full w-full flex flex-col justify-center">
-        <motion.svg
+      <div className="h-screen w-screen flex flex-col justify-center">
+        <ReactPlayer
+          url="/logo.mp4"
+          className="w-screen h-screen"
+          width="100vw"
+          height="auto"
+          muted
+          playing
+          config={{
+            file: {
+              playerVars: {
+                start: 2,
+              },
+            },
+          }}
+        />
+        {/* <motion.svg
           width="1692"
           height="1692"
           viewBox="0 0 1692 1692"
@@ -90,7 +105,7 @@ export const Loading = (props) => {
             transition={transition}
             className="bg-clip-text stroke-gigapink stroke-[15] m-2"
           />
-        </motion.svg>
+        </motion.svg> */}
       </div>
     </motion.div>
   );
