@@ -1,9 +1,41 @@
 import ReactPlayer from "react-player";
 import { useState } from "react";
 import { motion } from "framer-motion";
+import React, { useRef } from "react";
+import { useEffect } from "react";
 
 export const Loading = (props) => {
   const [visible, setVisible] = useState(true);
+
+  function isInViewport(element) {
+    const rect = element.getBoundingClientRect();
+    console.log(rect);
+
+    return (
+      rect.top >= 0 &&
+      rect.left >= 0 &&
+      rect.bottom <=
+        (window.innerHeight || document.documentElement.clientHeight) &&
+      rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+  }
+
+  function checkInViewport() {
+    const video = document.getElementsByClassName("video")[0];
+    console.log("Video", video);
+
+    if (isInViewport(video)) {
+      console.log("Visible");
+      video.style.display = "flex";
+    } else {
+      console.log("Invisible");
+      video.style.display = "none";
+    }
+  }
+
+  useEffect(() => {
+    setInterval(() => {}, 0);
+  }, []);
 
   const transition = {
     duration: 2,
@@ -44,13 +76,14 @@ export const Loading = (props) => {
       initial="open"
       animate="closed"
       variants={variants}
+      onScroll={() => checkInViewport()}
     >
       <div className="h-screen w-screen flex flex-col justify-center">
-        <ReactPlayer
+        {/* <ReactPlayer
           url="/logo.mp4"
-          className="w-screen h-screen"
+          className="video w-screen h-screen"
           width="100vw"
-          height="auto"
+          height="100vh"
           muted
           playing
           config={{
@@ -60,8 +93,8 @@ export const Loading = (props) => {
               },
             },
           }}
-        />
-        {/* <motion.svg
+        /> */}
+        <motion.svg
           width="1692"
           height="1692"
           viewBox="0 0 1692 1692"
@@ -105,7 +138,7 @@ export const Loading = (props) => {
             transition={transition}
             className="bg-clip-text stroke-gigapink stroke-[15] m-2"
           />
-        </motion.svg> */}
+        </motion.svg>
       </div>
     </motion.div>
   );
