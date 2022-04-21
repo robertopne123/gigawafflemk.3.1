@@ -72,7 +72,7 @@ export const Loading = (props) => {
 
   return (
     <motion.div
-      className="absolute left-0 top-0 w-screen h-screen bg-black z-[100]"
+      className="absolute left-0 top-0 w-screen h-screen bg-white z-[100]"
       initial="open"
       animate="closed"
       variants={variants}
