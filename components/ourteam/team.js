@@ -35,20 +35,6 @@ export const Team = () => {
         <div className="flex flex-col gap-2">
           <div className="w-[150px] h-[150px] bg-gigapink rounded-full overflow-clip">
             <img
-              src="/staff/7.png"
-              className="h-full w-full object-contain translate-x-2"
-            ></img>
-          </div>
-          <div className="flex flex-col">
-            <p className="font-parkson text-black text-3xl leading-[25px]">
-              Richard Van Parys
-            </p>
-            <p className="font-parkson text-gigapink text-xl">Web Developer</p>
-          </div>
-        </div>
-        <div className="flex flex-col gap-2">
-          <div className="w-[150px] h-[150px] bg-gigapink rounded-full overflow-clip">
-            <img
               src="/staff/12.png"
               className="h-full w-full object-contain scale-[1.20] translate-y-2 -translate-x-1"
             ></img>
@@ -58,6 +44,22 @@ export const Team = () => {
               Matthew Campbell
             </p>
             <p className="font-parkson text-gigapink text-xl">Web Designer</p>
+          </div>
+        </div>
+        <div className="flex flex-col gap-2">
+          <div className="w-[150px] h-[150px] bg-gigablue rounded-full overflow-clip">
+            <img
+              src="/staff/13.png"
+              className="h-full w-full object-contain"
+            ></img>
+          </div>
+          <div className="flex flex-col">
+            <p className="font-parkson text-black text-3xl leading-[25px]">
+              Naeema Adam
+            </p>
+            <p className="font-parkson text-gigapink text-xl">
+              Content Analyst
+            </p>
           </div>
         </div>
         {/* <div className="flex flex-col gap-2">
