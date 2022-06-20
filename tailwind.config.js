@@ -14,6 +14,8 @@ module.exports = {
         gigablue: "#4EDDF0",
       },
       backgroundImage: {
+        wraptor: "url('/projects/wraptor.jpg')",
+        hawc: "url('/projects/hawc.jpg')",
         pgb: "url('/projects/PGB.jpg')",
         grandvenue: "url('/projects/grandvenue.jpg')",
         mycabinbed: "url('/projects/mycabinbed.jpg')",

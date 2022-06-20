@@ -64,7 +64,7 @@ export const Loading = (props) => {
       y: 0,
       transition: {
         duration: 2,
-        delay: 6,
+        delay: 2,
       },
       transitionEnd: { display: "none" },
     },

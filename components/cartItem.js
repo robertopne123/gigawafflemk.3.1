@@ -71,7 +71,8 @@ const CartItem = ({
       </div>
       <div className="flex flex-col justify-center p-1">
         <p className="woo-next-cart-element font-poppins font-bold sm:text-sm text-xs">
-          £{"string" !== typeof item.price ? item.price.toFixed(2) : item.price}
+          £
+          {"string" !== typeof item.price ? item.price?.toFixed(2) : item.price}
         </p>
       </div>
       <div className="p-1 flex flex-col justify-center">
