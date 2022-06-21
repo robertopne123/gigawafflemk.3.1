@@ -3,7 +3,7 @@ import { gql } from "@apollo/client";
 import { useEffect, useState } from "react";
 import client from "../lib/apollo";
 
-export const getCartData = () => {
+export const GetCartData = () => {
   const [cartItems, setCartItems] = useState([]);
   const [cartCount, setCartCount] = useState(0);
 
