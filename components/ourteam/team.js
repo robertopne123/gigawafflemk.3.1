@@ -32,7 +32,7 @@ export const Team = () => {
             <p className="font-parkson text-gigapink text-xl">Web Developer</p>
           </div>
         </div> */}
-        <div className="flex flex-col gap-2">
+        {/* <div className="flex flex-col gap-2">
           <div className="w-[150px] h-[150px] bg-gigapink rounded-full overflow-clip">
             <img
               src="/staff/12.png"
@@ -45,7 +45,7 @@ export const Team = () => {
             </p>
             <p className="font-parkson text-gigapink text-xl">Web Designer</p>
           </div>
-        </div>
+        </div> */}
         <div className="flex flex-col gap-2">
           <div className="w-[150px] h-[150px] bg-gigablue rounded-full overflow-clip">
             <img
