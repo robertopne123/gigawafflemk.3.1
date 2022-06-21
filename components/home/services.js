@@ -1,6 +1,5 @@
 import * as React from "react";
 import useMouse from "@react-hook/mouse-position";
-import MagicHover from "magic-hover";
 import Link from "next/link";
 
 export const HomeServices = () => {
