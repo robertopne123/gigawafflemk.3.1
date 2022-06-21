@@ -1,6 +1,6 @@
 import { useMutation, useQuery } from "@apollo/client";
 import { gql } from "@apollo/client";
-import { useEffect, useState } from "react/cjs/react.development";
+import { useEffect, useState } from "react";
 import client from "../lib/apollo";
 
 export const getCartData = () => {
