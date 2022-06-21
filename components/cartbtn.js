@@ -72,7 +72,6 @@ const CartBtn = (props) => {
       {"ExternalProduct" === product?.__typename ? (
         <a
           href={product?.externalUrl ?? "/"}
-          target="_blank"
           className="font-parkson px-3 py-1 rounded-sm mr-3 text-sm border-solid border border-current inline-block hover:bg-purple-600 hover:text-white hover:border-purple-600"
         >
           Buy now

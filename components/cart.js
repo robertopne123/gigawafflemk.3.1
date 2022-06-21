@@ -39,7 +39,7 @@ export const GetCartData = () => {
   return data;
 };
 
-export function addToCartBtn(productId, quantity) {
+export function AddToCartBtn(productId, quantity) {
   const ADDTOCART = gql`
     mutation AddToCart($productId: Int!, $quantity: Int!) {
       addToCart(input: { productId: $productId, quantity: $quantity }) {
@@ -77,7 +77,7 @@ export const getCartItems = () => {
   return cartItems;
 };
 
-export const getCartCount = () => {
+export const GetCartCount = () => {
   const [cartItems, setCartItems] = useState([]);
   const [cartCount, setCartCount] = useState(0);
 
