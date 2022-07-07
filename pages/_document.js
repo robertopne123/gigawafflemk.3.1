@@ -44,7 +44,7 @@ export default class MyDocument extends Document {
                   );
                 })(document, "script"))
             }
-            )('DzLR5a53VMZ7BoQ2');{" "}
+            )(&apos;DzLR5a53VMZ7BoQ2&apos;);{" "}
           </script>
         </Head>
         <body>

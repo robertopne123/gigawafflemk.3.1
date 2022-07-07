@@ -63,6 +63,7 @@ export default function Calculator() {
               {console.log(GetCalcData())}
               {GetCalcData().map((category, index) => (
                 <div
+                  key={index}
                   className={`w-full flex flex-col justify-center border-2 border-white hover:bg-black/10 cursor-pointer p-2 ${
                     GetCalcData().length % 2 != 0 &&
                     GetCalcData().length - 1 == index
@@ -84,6 +85,7 @@ export default function Calculator() {
                   .at(selectedServiceCategory)
                   .subServices.map((service, index) => (
                     <div
+                      key={index}
                       className="w-full h-[calc(100%/6)] flex flex-col justify-center hover:bg-black/10 cursor-pointer p-2"
                       onClick={() => setSelectedSubServiceCategory(index)}
                     >
@@ -102,7 +104,7 @@ export default function Calculator() {
                 .subServices?.at(selectedSubServiceCategory)
                 .options.at(optionPage)
                 .map((option, index) => (
-                  <p>{option.name}</p>
+                  <p key={index}>{option.name}</p>
                 ))}
             </div>
           )}
