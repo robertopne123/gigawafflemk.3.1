@@ -77,35 +77,35 @@ export default function Links() {
         <img src="/logo.svg" className="w-[70px] h-[70px] mx-auto"></img>
         <Link href="/">
           <a onClick={() => linkWeb()}>
-            <p className="font-parkson text-6xl text-center text-white">
+            <p className="font-parkson text-6xl text-center text-white hover:text-black">
               Website
             </p>
           </a>
         </Link>
         <Link href="https://instagram.com/gigawaffleuk">
           <a onClick={() => linkIG()}>
-            <p className="font-parkson text-6xl text-center text-white">
+            <p className="font-parkson text-6xl text-center text-white hover:text-black">
               Instagram
             </p>
           </a>
         </Link>
         <Link href="https://tiktok.com/@gigawaffleuk">
           <a onClick={() => linkTT()}>
-            <p className="font-parkson text-6xl text-center text-white">
+            <p className="font-parkson text-6xl text-center text-white hover:text-black">
               Tiktok
             </p>
           </a>
         </Link>
-        <Link href="https://linkedin.com/company/gigawaffleuk">
+        <Link href="https://linkedin.com/company/gigawaffle">
           <a onClick={() => linkLI()}>
-            <p className="font-parkson text-6xl text-center text-white">
+            <p className="font-parkson text-6xl text-center text-white hover:text-black">
               LinkedIn
             </p>
           </a>
         </Link>
         <Link href="https://facebook.com/gigawaffleuk">
           <a onClick={() => linkFB()}>
-            <p className="font-parkson text-6xl text-center text-white">
+            <p className="font-parkson text-6xl text-center text-white hover:text-black">
               Facebook
             </p>
           </a>
